@@ -3,7 +3,8 @@
     "features": "Technology",
     "pricing": "Pricing",
     "contact": "Contact",
-    "login": "Login"
+    "login": "Login",
+    "appDownload": "Download APP"
   },
   "hero": {
     "badge": "Institutional Grade Trading System",
@@ -11,7 +12,7 @@
     "subtitle": "With quantitative models from renowned quantitative team laboratories and strict risk control, ordinary investors can also have institutional-level trading capabilities.",
     "subtitleHighlight": "We don't predict the future, we only calculate probabilities.",
     "ctaPrimary": "View Strategies",
-    "ctaSecondary": "Download Whitepaper V1.0",
+    "ctaSecondary": "Download Whitepaper V1.3",
     "stats": {
       "latency": "Execution Latency",
       "uptime": "Uptime",

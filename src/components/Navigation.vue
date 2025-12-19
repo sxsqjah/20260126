@@ -58,9 +58,14 @@
             </div>
           </div>
           
-          <a href="#" class="font-mono text-xs font-bold text-brand-cyan border border-brand-cyan/50 px-4 py-2 rounded hover:bg-brand-cyan hover:text-brand-dark transition duration-300">
-            {{ $t('nav.login') }}
-          </a>
+          <div class="flex items-center gap-3">
+            <a href="#" class="font-mono text-xs font-bold text-white border border-white/30 px-4 py-2 rounded hover:bg-white/10 hover:border-white/50 transition duration-300">
+              {{ $t('nav.appDownload') }}
+            </a>
+            <a href="#" class="font-mono text-xs font-bold text-brand-cyan border border-brand-cyan/50 px-4 py-2 rounded hover:bg-brand-cyan hover:text-brand-dark transition duration-300">
+              {{ $t('nav.login') }}
+            </a>
+          </div>
         </div>
 
         <div class="flex items-center space-x-4 md:hidden">
@@ -150,6 +155,12 @@
           class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-white/5 hover:text-brand-cyan cursor-pointer"
         >
           {{ $t('nav.contact') }}
+        </a>
+        <a
+          href="#"
+          class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-white/5 hover:text-brand-cyan"
+        >
+          {{ $t('nav.appDownload') }}
         </a>
         <a
           href="#"

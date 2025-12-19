@@ -3,7 +3,8 @@
     "features": "技術アーキテクチャ",
     "pricing": "料金プラン",
     "contact": "お問い合わせ",
-    "login": "ログイン"
+    "login": "ログイン",
+    "appDownload": "アプリダウンロード"
   },
   "hero": {
     "badge": "機関級取引システム",
@@ -11,7 +12,7 @@
     "subtitle": "著名なクォントチーム研究所のクォントモデルと厳格なリスク管理により、一般投資家も機関級の取引能力を獲得できます。",
     "subtitleHighlight": "私たちは未来を予測しません。確率のみを統計化します。",
     "ctaPrimary": "戦略を確認",
-    "ctaSecondary": "ホワイトペーパー V1.0 をダウンロード",
+    "ctaSecondary": "ホワイトペーパー V1.3 をダウンロード",
     "stats": {
       "latency": "実行レイテンシ",
       "uptime": "稼働時間",

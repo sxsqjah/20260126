@@ -32,7 +32,8 @@
           {{ $t('hero.ctaPrimary') }}
         </a>
         <a
-          href="#"
+          href="/Crypto-K_Quants_Whitepaper_v1.3.pdf"
+          download="Crypto-K_Quants_Whitepaper_v1.3.pdf"
           class="group border border-white/20 text-white px-8 py-4 rounded font-bold text-lg hover:bg-white/5 transition flex items-center justify-center gap-2"
         >
           <svg class="w-5 h-5 text-brand-cyan group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">

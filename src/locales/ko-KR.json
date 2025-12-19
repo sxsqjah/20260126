@@ -3,7 +3,8 @@
     "features": "기술 아키텍처",
     "pricing": "구독 플랜",
     "contact": "문의하기",
-    "login": "로그인"
+    "login": "로그인",
+    "appDownload": "앱 다운로드"
   },
   "hero": {
     "badge": "기관급 거래 시스템",
@@ -11,7 +12,7 @@
     "subtitle": "유명 퀀트 팀 연구소의 퀀트 모델과 엄격한 리스크 관리로 일반 투자자도 기관급 거래 능력을 갖출 수 있습니다.",
     "subtitleHighlight": "우리는 미래를 예측하지 않습니다. 우리는 확률만 통계화합니다.",
     "ctaPrimary": "전략 확인하기",
-    "ctaSecondary": "백서 V1.0 다운로드",
+    "ctaSecondary": "백서 V1.3 다운로드",
     "stats": {
       "latency": "실행 지연",
       "uptime": "가동 시간",
