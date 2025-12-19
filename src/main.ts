@@ -11,6 +11,7 @@ import './assets/main.css'
 import zhCN from './locales/zh-CN.json'
 import koKR from './locales/ko-KR.json'
 import enUS from './locales/en-US.json'
+import jaJP from './locales/ja-JP.json'
 
 const pinia = createPinia()
 
@@ -26,7 +27,8 @@ const i18n = createI18n({
   messages: {
     'zh-CN': zhCN,
     'ko-KR': koKR,
-    'en-US': enUS
+    'en-US': enUS,
+    'ja-JP': jaJP
   }
 })
 

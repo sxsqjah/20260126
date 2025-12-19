@@ -53,8 +53,8 @@
         <div class="flex flex-col md:flex-row justify-between items-center text-xs text-gray-600">
           <p>{{ $t('footer.copyright') }}</p>
           <div class="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" class="hover:text-gray-400">{{ $t('footer.privacy') }}</a>
-            <a href="#" class="hover:text-gray-400">{{ $t('footer.terms') }}</a>
+            <router-link to="/privacy" class="hover:text-gray-400">{{ $t('footer.privacy') }}</router-link>
+            <router-link to="/terms" class="hover:text-gray-400">{{ $t('footer.terms') }}</router-link>
           </div>
         </div>
       </div>

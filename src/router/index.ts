@@ -1,5 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
+import PrivacyPolicy from '../views/PrivacyPolicy.vue'
+import TermsOfService from '../views/TermsOfService.vue'
 
 const router = createRouter({
   history: createWebHistory(),
@@ -8,6 +10,16 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: Home
+    },
+    {
+      path: '/privacy',
+      name: 'privacy',
+      component: PrivacyPolicy
+    },
+    {
+      path: '/terms',
+      name: 'terms',
+      component: TermsOfService
     }
   ],
   scrollBehavior(to, from, savedPosition) {
