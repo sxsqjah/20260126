@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #0B0C10;
+  color: #C5C6C7;
+  overflow-x: hidden;
+  font-family: 'Inter', sans-serif;
+}
+
+/* 毛玻璃特效 */
+.glass-card {
+  background: rgba(31, 40, 51, 0.4);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(102, 252, 241, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* 霓虹文字发光 */
+.text-glow {
+  text-shadow: 0 0 15px rgba(102, 252, 241, 0.4);
+}
+
+/* 按钮悬停光效 */
+.btn-primary {
+  background-color: #66FCF1;
+  color: #0B0C10;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary:hover {
+  box-shadow: 0 0 20px rgba(102, 252, 241, 0.5);
+  transform: translateY(-2px);
+}
+
+/* 滚动渐入动画类 */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 移动端菜单过渡 */
+.mobile-menu {
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+

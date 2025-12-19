@@ -1,0 +1,118 @@
+{
+  "nav": {
+    "features": "技术架构",
+    "pricing": "订阅方案",
+    "contact": "联系我们",
+    "login": "登录"
+  },
+  "hero": {
+    "badge": "机构级交易系统",
+    "title": "像韩国量化团队一样交易",
+    "subtitle": "用韩国级量化模型与严格风控，让普通投资者也能拥有机构级交易能力。",
+    "subtitleHighlight": "我们不预测未来，我们只统计概率。",
+    "ctaPrimary": "立即查看策略",
+    "ctaSecondary": "下载白皮书 V1.0",
+    "stats": {
+      "latency": "执行延迟",
+      "uptime": "运行时间",
+      "model": "多周期",
+      "monitor": "风控监控"
+    }
+  },
+  "features": {
+    "title": "核心技术架构",
+    "subtitle": "CORE TECHNOLOGY STACK",
+    "kModel": {
+      "title": "K-Model 共振引擎",
+      "description": "不再依赖单一指标。我们同时监测 15m / 1H / 4H 多周期信号，只有当趋势产生共振时才触发交易，大幅降低市场噪音误判。"
+    },
+    "aiTrading": {
+      "title": "DL-Signal 深度学习",
+      "description": "基于 LSTM 与 Transformer 架构训练的信号过滤器。有效识别假突破（False Breakout）与极端行情结构，避免在黑天鹅中被清算。"
+    },
+    "riskControl": {
+      "title": "Risk Budgeting 风控",
+      "description": "控制亏损，不控制盈利。系统内置严格的回撤预算与自动削减暴露机制（De-risking），确保本金安全永远优于收益增长。"
+    },
+    "signalProcessing": {
+      "title": "信号处理引擎",
+      "description": "支持 TradingView Webhook 信号接入，实时处理多策略信号，智能路由与执行，确保信号及时响应。"
+    },
+    "multiExchange": {
+      "title": "多交易所支持",
+      "description": "集成 Gate.io 等主流交易所，统一接口管理，支持现货与衍生品交易，灵活配置交易规则。"
+    }
+  },
+  "pricing": {
+    "title": "透明定价，拒绝套路",
+    "subtitle": "Simple Pricing. Serious Risk Control.",
+    "basic": {
+      "name": "Basic Plan",
+      "price": "49",
+      "period": "USDT / 月",
+      "description": "适合低成本验证系统稳定性",
+      "features": {
+        "strategy": "1 条保守型趋势策略",
+        "position": "固定低仓位配置",
+        "delay": "信号延迟 30-60s",
+        "notification": "Telegram 基础推送"
+      },
+      "cta": "开始体验"
+    },
+    "advanced": {
+      "name": "Advanced Plan",
+      "badge": "MOST POPULAR",
+      "price": "199",
+      "period": "USDT / 月",
+      "description": "适合认真交易的长期主义者",
+      "features": {
+        "strategies": "2-3 条核心策略 (趋势+突破)",
+        "resonance": "15m/1H/4H 多周期共振",
+        "api": "实时 API 智能跟单",
+        "risk": "基础风控参数配置",
+        "report": "月度策略复盘报告"
+      },
+      "cta": "立即订阅"
+    },
+    "pro": {
+      "name": "Pro Quant Plan",
+      "price": "299+",
+      "period": "USDT / 月",
+      "description": "大资金用户与机构定制",
+      "features": {
+        "all": "解锁全部策略库",
+        "priority": "高优先级执行 (无延迟)",
+        "revenue": "可选：成果分成 (10-20%)",
+        "custom": "专属策略组合定制"
+      },
+      "cta": "申请邀请码"
+    },
+    "enterprise": {
+      "title": "是交易所、工作室或资管机构？",
+      "description": "我们提供白标系统、API 信号接入与定制化风控方案。",
+      "cta": "联系商务团队 ->"
+    }
+  },
+  "footer": {
+    "description": "源自韩国量化实验室，服务全球加密投资者。\n用数据取代情绪，用系统对抗人性。\n\nBased in Seoul & Singapore.",
+    "products": {
+      "title": "产品",
+      "subscription": "策略订阅",
+      "api": "API 跟单",
+      "whitepaper": "下载白皮书",
+      "backtest": "历史回测报告"
+    },
+    "support": {
+      "title": "支持",
+      "help": "帮助中心",
+      "community": "Telegram 社区",
+      "contact": "联系我们",
+      "business": "商务合作"
+    },
+    "risk": "重要风险提示：加密资产交易具有极高的市场风险。Crypto-K Quants 提供的所有策略、信号与回测数据仅供参考，不构成任何投资建议。历史收益不代表未来表现。用户应始终独立控制账户权限，并自行承担因跟单产生的资金损失风险。本服务不提供\"保本\"或\"承诺收益\"服务。",
+    "copyright": "© 2024 Crypto-K Quants. All rights reserved.",
+    "privacy": "隐私协议",
+    "terms": "服务条款"
+  }
+}
+

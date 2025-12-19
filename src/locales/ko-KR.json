@@ -1,0 +1,118 @@
+{
+  "nav": {
+    "features": "기술 아키텍처",
+    "pricing": "구독 플랜",
+    "contact": "문의하기",
+    "login": "로그인"
+  },
+  "hero": {
+    "badge": "기관급 거래 시스템",
+    "title": "한국 퀀트처럼 거래하세요",
+    "subtitle": "한국급 퀀트 모델과 엄격한 리스크 관리로 일반 투자자도 기관급 거래 능력을 갖출 수 있습니다.",
+    "subtitleHighlight": "우리는 미래를 예측하지 않습니다. 우리는 확률만 통계화합니다.",
+    "ctaPrimary": "전략 확인하기",
+    "ctaSecondary": "백서 V1.0 다운로드",
+    "stats": {
+      "latency": "실행 지연",
+      "uptime": "가동 시간",
+      "model": "다중 시간대",
+      "monitor": "리스크 모니터링"
+    }
+  },
+  "features": {
+    "title": "핵심 기술 아키텍처",
+    "subtitle": "CORE TECHNOLOGY STACK",
+    "kModel": {
+      "title": "K-Model 공진 엔진",
+      "description": "단일 지표에 의존하지 않습니다. 15m / 1H / 4H 다중 시간대 신호를 동시에 모니터링하며, 트렌드가 공진할 때만 거래를 트리거하여 시장 노이즈 오판을 크게 줄입니다."
+    },
+    "aiTrading": {
+      "title": "DL-Signal 딥러닝",
+      "description": "LSTM과 Transformer 아키텍처로 훈련된 신호 필터. 가짜 돌파(False Breakout)와 극단적 시장 구조를 효과적으로 식별하여 블랙스완 상황에서 청산을 피합니다."
+    },
+    "riskControl": {
+      "title": "Risk Budgeting 리스크 관리",
+      "description": "손실을 제어하고 수익은 제어하지 않습니다. 시스템에 엄격한 낙폭 예산과 자동 노출 감소 메커니즘(De-risking)이 내장되어 있어 원금 안전이 항상 수익 성장보다 우선합니다."
+    },
+    "signalProcessing": {
+      "title": "신호 처리 엔진",
+      "description": "TradingView Webhook 신호 접속을 지원하며, 실시간으로 다중 전략 신호를 처리하고 지능형 라우팅과 실행을 보장하여 신호가 즉시 응답됩니다."
+    },
+    "multiExchange": {
+      "title": "다중 거래소 지원",
+      "description": "Gate.io 등 주요 거래소를 통합하여 통합 인터페이스로 관리하며, 현물 및 파생상품 거래를 지원하고 거래 규칙을 유연하게 구성할 수 있습니다."
+    }
+  },
+  "pricing": {
+    "title": "투명한 가격, 속임수 없음",
+    "subtitle": "Simple Pricing. Serious Risk Control.",
+    "basic": {
+      "name": "Basic Plan",
+      "price": "49",
+      "period": "USDT / 월",
+      "description": "시스템 안정성을 저비용으로 검증하기에 적합",
+      "features": {
+        "strategy": "보수형 트렌드 전략 1개",
+        "position": "고정 낮은 포지션 구성",
+        "delay": "신호 지연 30-60초",
+        "notification": "Telegram 기본 푸시"
+      },
+      "cta": "체험 시작"
+    },
+    "advanced": {
+      "name": "Advanced Plan",
+      "badge": "MOST POPULAR",
+      "price": "199",
+      "period": "USDT / 월",
+      "description": "진지하게 거래하는 장기주의자에게 적합",
+      "features": {
+        "strategies": "핵심 전략 2-3개 (트렌드+돌파)",
+        "resonance": "15m/1H/4H 다중 시간대 공진",
+        "api": "실시간 API 지능형 복사 거래",
+        "risk": "기본 리스크 관리 매개변수 구성",
+        "report": "월간 전략 복습 보고서"
+      },
+      "cta": "즉시 구독"
+    },
+    "pro": {
+      "name": "Pro Quant Plan",
+      "price": "299+",
+      "period": "USDT / 월",
+      "description": "대규모 자금 사용자 및 기관 맞춤",
+      "features": {
+        "all": "전체 전략 라이브러리 잠금 해제",
+        "priority": "높은 우선순위 실행 (지연 없음)",
+        "revenue": "선택사항: 성과 분배 (10-20%)",
+        "custom": "전용 전략 조합 맞춤"
+      },
+      "cta": "초대 코드 신청"
+    },
+    "enterprise": {
+      "title": "거래소, 스튜디오 또는 자산 관리 기관이신가요?",
+      "description": "화이트 라벨 시스템, API 신호 접속 및 맞춤형 리스크 관리 솔루션을 제공합니다.",
+      "cta": "비즈니스 팀 문의 ->"
+    }
+  },
+  "footer": {
+    "description": "한국 퀀트 연구소에서 시작하여 전 세계 암호화폐 투자자에게 서비스를 제공합니다.\n데이터로 감정을 대체하고 시스템으로 인간성을 대항합니다.\n\n서울 및 싱가포르 기반.",
+    "products": {
+      "title": "제품",
+      "subscription": "전략 구독",
+      "api": "API 복사 거래",
+      "whitepaper": "백서 다운로드",
+      "backtest": "역사 백테스트 보고서"
+    },
+    "support": {
+      "title": "지원",
+      "help": "도움말 센터",
+      "community": "Telegram 커뮤니티",
+      "contact": "문의하기",
+      "business": "비즈니스 협력"
+    },
+    "risk": "중요한 리스크 고지: 암호화폐 자산 거래는 매우 높은 시장 리스크를 수반합니다. Crypto-K Quants가 제공하는 모든 전략, 신호 및 백테스트 데이터는 참고용이며 어떠한 투자 조언도 구성하지 않습니다. 과거 수익은 미래 성과를 나타내지 않습니다. 사용자는 항상 계정 권한을 독립적으로 제어하고 복사 거래로 인한 자금 손실 위험을 스스로 부담해야 합니다. 본 서비스는 '원금 보장' 또는 '수익 보장' 서비스를 제공하지 않습니다.",
+    "copyright": "© 2024 Crypto-K Quants. All rights reserved.",
+    "privacy": "개인정보 보호 정책",
+    "terms": "서비스 약관"
+  }
+}
+

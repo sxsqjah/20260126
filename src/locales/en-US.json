@@ -1,0 +1,118 @@
+{
+  "nav": {
+    "features": "Technology",
+    "pricing": "Pricing",
+    "contact": "Contact",
+    "login": "Login"
+  },
+  "hero": {
+    "badge": "Institutional Grade Trading System",
+    "title": "Trade like a Korean Quant",
+    "subtitle": "With Korean-grade quantitative models and strict risk control, ordinary investors can also have institutional-level trading capabilities.",
+    "subtitleHighlight": "We don't predict the future, we only calculate probabilities.",
+    "ctaPrimary": "View Strategies",
+    "ctaSecondary": "Download Whitepaper V1.0",
+    "stats": {
+      "latency": "Execution Latency",
+      "uptime": "Uptime",
+      "model": "Multi-Timeframe",
+      "monitor": "Risk Monitor"
+    }
+  },
+  "features": {
+    "title": "Core Technology Stack",
+    "subtitle": "CORE TECHNOLOGY STACK",
+    "kModel": {
+      "title": "K-Model Resonance Engine",
+      "description": "No longer relying on a single indicator. We simultaneously monitor 15m / 1H / 4H multi-timeframe signals, and only trigger trades when trends resonate, significantly reducing market noise misjudgment."
+    },
+    "aiTrading": {
+      "title": "DL-Signal Deep Learning",
+      "description": "Signal filter trained on LSTM and Transformer architectures. Effectively identifies false breakouts and extreme market structures, avoiding liquidation in black swan events."
+    },
+    "riskControl": {
+      "title": "Risk Budgeting Control",
+      "description": "Control losses, not profits. The system has built-in strict drawdown budgets and automatic exposure reduction mechanisms (De-risking), ensuring capital safety always takes precedence over profit growth."
+    },
+    "signalProcessing": {
+      "title": "Signal Processing Engine",
+      "description": "Supports TradingView Webhook signal integration, real-time processing of multi-strategy signals, intelligent routing and execution, ensuring timely signal response."
+    },
+    "multiExchange": {
+      "title": "Multi-Exchange Support",
+      "description": "Integrates with major exchanges like Gate.io, unified interface management, supports spot and derivatives trading, flexible trading rule configuration."
+    }
+  },
+  "pricing": {
+    "title": "Transparent Pricing, No Tricks",
+    "subtitle": "Simple Pricing. Serious Risk Control.",
+    "basic": {
+      "name": "Basic Plan",
+      "price": "49",
+      "period": "USDT / month",
+      "description": "Suitable for low-cost validation of system stability",
+      "features": {
+        "strategy": "1 conservative trend strategy",
+        "position": "Fixed low position configuration",
+        "delay": "Signal delay 30-60s",
+        "notification": "Telegram basic push"
+      },
+      "cta": "Get Started"
+    },
+    "advanced": {
+      "name": "Advanced Plan",
+      "badge": "MOST POPULAR",
+      "price": "199",
+      "period": "USDT / month",
+      "description": "Suitable for serious long-term traders",
+      "features": {
+        "strategies": "2-3 core strategies (trend + breakout)",
+        "resonance": "15m/1H/4H multi-timeframe resonance",
+        "api": "Real-time API intelligent copy trading",
+        "risk": "Basic risk control parameter configuration",
+        "report": "Monthly strategy review report"
+      },
+      "cta": "Subscribe Now"
+    },
+    "pro": {
+      "name": "Pro Quant Plan",
+      "price": "299+",
+      "period": "USDT / month",
+      "description": "Custom for large capital users and institutions",
+      "features": {
+        "all": "Unlock all strategy library",
+        "priority": "High priority execution (no delay)",
+        "revenue": "Optional: profit sharing (10-20%)",
+        "custom": "Dedicated strategy combination customization"
+      },
+      "cta": "Request Invite Code"
+    },
+    "enterprise": {
+      "title": "Exchange, Studio, or Asset Management Institution?",
+      "description": "We provide white-label systems, API signal integration, and customized risk control solutions.",
+      "cta": "Contact Business Team ->"
+    }
+  },
+  "footer": {
+    "description": "Originated from Korean quantitative lab, serving global crypto investors.\nReplace emotion with data, fight human nature with systems.\n\nBased in Seoul & Singapore.",
+    "products": {
+      "title": "Products",
+      "subscription": "Strategy Subscription",
+      "api": "API Copy Trading",
+      "whitepaper": "Download Whitepaper",
+      "backtest": "Historical Backtest Report"
+    },
+    "support": {
+      "title": "Support",
+      "help": "Help Center",
+      "community": "Telegram Community",
+      "contact": "Contact Us",
+      "business": "Business Cooperation"
+    },
+    "risk": "Important Risk Warning: Cryptocurrency trading carries extremely high market risks. All strategies, signals, and backtest data provided by Crypto-K Quants are for reference only and do not constitute any investment advice. Past returns do not represent future performance. Users should always independently control account permissions and bear the risk of capital losses from copy trading. This service does not provide 'principal guarantee' or 'profit guarantee' services.",
+    "copyright": "© 2024 Crypto-K Quants. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  }
+}
+
