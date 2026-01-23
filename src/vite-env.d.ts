@@ -6,3 +6,8 @@ declare module '*.vue' {
   export default component
 }
 
+interface Window {
+  CK_CONFIG?: {
+    loginUrl?: string
+  }
+}
