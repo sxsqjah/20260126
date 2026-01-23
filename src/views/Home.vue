@@ -4,6 +4,7 @@
     <Hero />
     <Features />
     <Pricing />
+    <AppDownload />
     <Footer />
   </div>
 </template>
@@ -13,9 +14,9 @@ import Navigation from '../components/Navigation.vue'
 import Hero from '../components/Hero.vue'
 import Features from '../components/Features.vue'
 import Pricing from '../components/Pricing.vue'
+import AppDownload from '../components/AppDownload.vue'
 import Footer from '../components/Footer.vue'
 </script>
 
 <style scoped>
 </style>
-

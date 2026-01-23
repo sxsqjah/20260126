@@ -49,7 +49,7 @@
     "subtitle": "Simple Pricing. Serious Risk Control.",
     "basic": {
       "name": "Basic Plan",
-      "price": "49",
+      "price": "59",
       "period": "USDT / 月",
       "description": "适合低成本验证系统稳定性",
       "features": {
@@ -63,7 +63,7 @@
     "advanced": {
       "name": "Advanced Plan",
       "badge": "MOST POPULAR",
-      "price": "199",
+      "price": "299",
       "period": "USDT / 月",
       "description": "适合认真交易的长期主义者",
       "features": {
@@ -77,7 +77,7 @@
     },
     "pro": {
       "name": "Pro Quant Plan",
-      "price": "299+",
+      "price": "999",
       "period": "USDT / 月",
       "description": "大资金用户与机构定制",
       "features": {
@@ -92,6 +92,25 @@
       "title": "是交易所、工作室或资管机构？",
       "description": "我们提供白标系统、API 信号接入与定制化风控方案。",
       "cta": "联系商务团队 ->"
+    }
+  },
+  "download": {
+    "title": "APP 下载",
+    "subtitle": "DOWNLOAD THE APP",
+    "description": "安装包由官方服务器提供，点击即可下载到本地。",
+    "android": {
+      "title": "Android 安装包",
+      "meta": "适用于 Android 8.0+",
+      "badge": "APK",
+      "cta": "立即下载",
+      "note": "如浏览器提示安全风险，请选择继续下载。"
+    },
+    "ios": {
+      "title": "iOS 安装包",
+      "meta": "适用于 iOS 13+",
+      "badge": "IPA",
+      "cta": "立即下载",
+      "note": "安装方式请以设备提示为准。"
     }
   },
   "footer": {
@@ -215,4 +234,3 @@
     "backToHome": "返回首页"
   }
 }
-

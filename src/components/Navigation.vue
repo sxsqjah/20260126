@@ -59,10 +59,10 @@
           </div>
           
           <div class="flex items-center gap-3">
-            <a href="#" class="font-mono text-xs font-bold text-white border border-white/30 px-4 py-2 rounded hover:bg-white/10 hover:border-white/50 transition duration-300">
+            <a @click="navigateToSection('download')" class="font-mono text-xs font-bold text-white border border-white/30 px-4 py-2 rounded hover:bg-white/10 hover:border-white/50 transition duration-300 cursor-pointer">
               {{ $t('nav.appDownload') }}
             </a>
-            <a href="#" class="font-mono text-xs font-bold text-brand-cyan border border-brand-cyan/50 px-4 py-2 rounded hover:bg-brand-cyan hover:text-brand-dark transition duration-300">
+            <a :href="loginUrl" class="font-mono text-xs font-bold text-brand-cyan border border-brand-cyan/50 px-4 py-2 rounded hover:bg-brand-cyan hover:text-brand-dark transition duration-300">
               {{ $t('nav.login') }}
             </a>
           </div>
@@ -157,13 +157,13 @@
           {{ $t('nav.contact') }}
         </a>
         <a
-          href="#"
+          @click="navigateToSection('download'); toggleMenu()"
           class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-white/5 hover:text-brand-cyan"
         >
           {{ $t('nav.appDownload') }}
         </a>
         <a
-          href="#"
+          :href="loginUrl"
           class="block px-3 py-2 rounded-md text-base font-medium text-brand-cyan"
         >
           {{ $t('nav.login') }}
@@ -178,6 +178,7 @@ import { ref, computed, onMounted, onUnmounted } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useRouter, useRoute } from 'vue-router'
 import { useI18nStore, type Locale } from '../stores/i18n'
+import { getH5LoginUrl } from '../config/h5Login'
 
 const { locale } = useI18n()
 const i18nStore = useI18nStore()
@@ -186,9 +187,11 @@ const route = useRoute()
 
 const mobileMenuOpen = ref(false)
 const languageMenuOpen = ref(false)
+const loginUrl = getH5LoginUrl()
 
 const languages = [
   { code: 'zh-CN' as Locale, label: '中', name: '中文' },
+  { code: 'zh-TW' as Locale, label: '繁', name: '繁體中文' },
   { code: 'ko-KR' as Locale, label: '한', name: '한국어' },
   { code: 'en-US' as Locale, label: 'EN', name: 'English' },
   { code: 'ja-JP' as Locale, label: '日', name: '日本語' }
@@ -263,4 +266,3 @@ function navigateToSection(section: string) {
 
 <style scoped>
 </style>
-

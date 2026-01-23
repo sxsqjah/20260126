@@ -49,7 +49,7 @@
     "subtitle": "Simple Pricing. Serious Risk Control.",
     "basic": {
       "name": "Basic Plan",
-      "price": "49",
+      "price": "59",
       "period": "USDT / 月",
       "description": "システムの安定性を低コストで検証するのに適しています",
       "features": {
@@ -63,7 +63,7 @@
     "advanced": {
       "name": "Advanced Plan",
       "badge": "MOST POPULAR",
-      "price": "199",
+      "price": "299",
       "period": "USDT / 月",
       "description": "真剣に取引する長期主義者に適しています",
       "features": {
@@ -77,7 +77,7 @@
     },
     "pro": {
       "name": "Pro Quant Plan",
-      "price": "299+",
+      "price": "999",
       "period": "USDT / 月",
       "description": "大口資金ユーザーおよび機関向けカスタム",
       "features": {
@@ -92,6 +92,25 @@
       "title": "取引所、スタジオ、または資産管理機関ですか？",
       "description": "ホワイトラベルシステム、API シグナル統合、カスタマイズされたリスク管理ソリューションを提供します。",
       "cta": "ビジネスチームに連絡 ->"
+    }
+  },
+  "download": {
+    "title": "アプリダウンロード",
+    "subtitle": "DOWNLOAD THE APP",
+    "description": "公式インストーラーをサーバーから直接ダウンロードできます。",
+    "android": {
+      "title": "Android APK",
+      "meta": "Android 8.0+ 対応",
+      "badge": "APK",
+      "cta": "ダウンロード",
+      "note": "警告が出た場合はダウンロードを続行してください。"
+    },
+    "ios": {
+      "title": "iOS IPA",
+      "meta": "iOS 13+ 対応",
+      "badge": "IPA",
+      "cta": "ダウンロード",
+      "note": "端末の案内に従ってインストールしてください。"
     }
   },
   "footer": {
@@ -215,4 +234,3 @@
     "backToHome": "ホームに戻る"
   }
 }
-

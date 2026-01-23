@@ -1,6 +1,47 @@
 import { defineStore } from 'pinia'
 
-export type Locale = 'zh-CN' | 'ko-KR' | 'en-US' | 'ja-JP'
+const supportedLocales = ['zh-CN', 'zh-TW', 'ko-KR', 'en-US', 'ja-JP'] as const
+export type Locale = typeof supportedLocales[number]
+
+const geoIpUrl = 'https://ipwho.is/?fields=country_code'
+
+function mapCountryToLocale(countryCode: string | null): Locale {
+  switch (countryCode) {
+    case 'CN':
+      return 'zh-CN'
+    case 'TW':
+      return 'zh-TW'
+    case 'KR':
+      return 'ko-KR'
+    case 'JP':
+      return 'ja-JP'
+    case 'US':
+      return 'en-US'
+    default:
+      return 'en-US'
+  }
+}
+
+async function fetchCountryCode(): Promise<string | null> {
+  const controller = new AbortController()
+  const timeoutId = setTimeout(() => controller.abort(), 2500)
+
+  try {
+    const response = await fetch(geoIpUrl, { signal: controller.signal })
+    if (!response.ok) {
+      return null
+    }
+    const data = await response.json()
+    if (typeof data.country_code === 'string') {
+      return data.country_code.toUpperCase()
+    }
+    return null
+  } catch {
+    return null
+  } finally {
+    clearTimeout(timeoutId)
+  }
+}
 
 export const useI18nStore = defineStore('i18n', {
   state: () => ({
@@ -13,36 +54,15 @@ export const useI18nStore = defineStore('i18n', {
       localStorage.setItem('locale', newLocale)
     },
     
-    initLocale() {
+    async initLocale() {
       const saved = localStorage.getItem('locale') as Locale | null
-      if (saved && ['zh-CN', 'ko-KR', 'en-US', 'ja-JP'].includes(saved)) {
+      if (saved && supportedLocales.includes(saved)) {
         this.locale = saved
       } else {
-        // 根据系统默认语言自动选择
-        const browserLang = navigator.language || navigator.languages?.[0] || 'en-US'
-        const langCode = browserLang.toLowerCase()
-        
-        // 更精确的语言匹配
-        if (langCode.startsWith('ko') || langCode.includes('korean')) {
-          this.locale = 'ko-KR'
-        } else if (langCode.startsWith('zh-cn') || langCode === 'zh' || langCode.includes('chinese')) {
-          this.locale = 'zh-CN'
-        } else if (langCode.startsWith('zh-tw') || langCode.startsWith('zh-hk')) {
-          // 繁体中文也默认使用简体中文
-          this.locale = 'zh-CN'
-        } else if (langCode.startsWith('ja') || langCode.includes('japanese')) {
-          this.locale = 'ja-JP'
-        } else if (langCode.startsWith('en') || langCode.includes('english')) {
-          this.locale = 'en-US'
-        } else {
-          // 默认使用英文
-          this.locale = 'en-US'
-        }
-        
-        // 保存自动检测的语言到 localStorage
+        const countryCode = await fetchCountryCode()
+        this.locale = mapCountryToLocale(countryCode)
         localStorage.setItem('locale', this.locale)
       }
     }
   }
 })
-

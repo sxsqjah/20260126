@@ -49,7 +49,7 @@
     "subtitle": "Simple Pricing. Serious Risk Control.",
     "basic": {
       "name": "Basic Plan",
-      "price": "49",
+      "price": "59",
       "period": "USDT / month",
       "description": "Suitable for low-cost validation of system stability",
       "features": {
@@ -63,7 +63,7 @@
     "advanced": {
       "name": "Advanced Plan",
       "badge": "MOST POPULAR",
-      "price": "199",
+      "price": "299",
       "period": "USDT / month",
       "description": "Suitable for serious long-term traders",
       "features": {
@@ -77,7 +77,7 @@
     },
     "pro": {
       "name": "Pro Quant Plan",
-      "price": "299+",
+      "price": "999",
       "period": "USDT / month",
       "description": "Custom for large capital users and institutions",
       "features": {
@@ -92,6 +92,25 @@
       "title": "Exchange, Studio, or Asset Management Institution?",
       "description": "We provide white-label systems, API signal integration, and customized risk control solutions.",
       "cta": "Contact Business Team ->"
+    }
+  },
+  "download": {
+    "title": "App Download",
+    "subtitle": "DOWNLOAD THE APP",
+    "description": "Official installers are hosted on our server for direct download.",
+    "android": {
+      "title": "Android APK",
+      "meta": "Android 8.0+",
+      "badge": "APK",
+      "cta": "Download",
+      "note": "If your browser warns, choose to keep the file."
+    },
+    "ios": {
+      "title": "iOS IPA",
+      "meta": "iOS 13+",
+      "badge": "IPA",
+      "cta": "Download",
+      "note": "Install according to the prompt on your device."
     }
   },
   "footer": {
@@ -215,4 +234,3 @@
     "backToHome": "Back to Home"
   }
 }
-
