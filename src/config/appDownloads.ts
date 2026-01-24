@@ -4,7 +4,7 @@ export const appDownloads = {
     filename: 'ckq-app-android.apk',
   },
   ios: {
-    url: '/downloads/ckq-app-ios.ipa',
+    url: 'https://home.ckqpro.com/#/',
     filename: 'ckq-app-ios.ipa',
   },
 }
