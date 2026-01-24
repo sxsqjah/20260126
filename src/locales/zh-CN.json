@@ -53,7 +53,7 @@
       "period": "USDT / 月",
       "description": "适合低成本验证系统稳定性",
       "features": {
-        "strategy": "1 条保守型趋势策略",
+        "strategy": "3-4条激进策略",
         "position": "固定低仓位配置",
         "delay": "信号延迟 30-60s",
         "notification": "Telegram 基础推送"
@@ -67,7 +67,7 @@
       "period": "USDT / 月",
       "description": "适合认真交易的长期主义者",
       "features": {
-        "strategies": "2-3 条核心策略 (趋势+突破)",
+        "strategies": "6-9条核心策略 (趋势+突破)",
         "resonance": "15m/1H/4H 多周期共振",
         "api": "实时 API 智能跟单",
         "risk": "基础风控参数配置",
@@ -86,7 +86,7 @@
         "revenue": "可选：成果分成 (10-20%)",
         "custom": "专属策略组合定制"
       },
-      "cta": "申请邀请码"
+      "cta": "联系我们"
     },
     "enterprise": {
       "title": "是交易所、工作室或资管机构？",

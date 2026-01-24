@@ -81,7 +81,7 @@
             </li>
           </ul>
           <a
-            href="#"
+            href="https://home.ckqpro.com/#/pages/auth/register"
             class="block w-full py-4 bg-brand-cyan text-brand-dark font-bold text-center rounded-lg hover:bg-brand-cyanDim hover:shadow-[0_0_20px_rgba(102,252,241,0.4)] transition"
           >
             {{ $t('pricing.advanced.cta') }}
@@ -117,7 +117,7 @@
             </li>
           </ul>
           <a
-            href="#"
+            href="#footer-contact"
             class="block w-full py-3 border border-purple-500/50 text-purple-400 text-center rounded-lg hover:bg-purple-500/10 transition text-sm font-bold"
           >
             {{ $t('pricing.pro.cta') }}
@@ -155,4 +155,3 @@ useRevealAnimation()
   transition-delay: 0.2s;
 }
 </style>
-

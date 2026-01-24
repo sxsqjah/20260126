@@ -37,7 +37,7 @@
               <a href="#" class="hover:text-brand-cyan transition">{{ $t('footer.support.community') }}</a>
             </li>
             <li>
-              <a href="#" class="hover:text-brand-cyan transition">{{ $t('footer.support.contact') }}</a>
+              <a id="footer-contact" href="#footer-contact" class="hover:text-brand-cyan transition">{{ $t('footer.support.contact') }}</a>
             </li>
             <li>
               <a href="#" class="hover:text-brand-cyan transition">{{ $t('footer.support.business') }}</a>
@@ -89,4 +89,3 @@ function scrollToLogin() {
 
 <style scoped>
 </style>
-
