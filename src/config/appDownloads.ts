@@ -1,6 +1,8 @@
+import { buildApiUrl } from './api'
+
 export const appDownloads = {
   android: {
-    url: '/downloads/ckq-app-android.apk',
+    url: buildApiUrl('/system/app-download'),
     filename: 'ckq-app-android.apk',
   },
   ios: {
