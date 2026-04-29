@@ -7,41 +7,179 @@
     "appDownload": "アプリダウンロード"
   },
   "hero": {
-    "badge": "機関級取引システム",
-    "title": "韓国のクォントのように取引する",
-    "subtitle": "著名なクォントチーム研究所のクォントモデルと厳格なリスク管理により、一般投資家も機関級の取引能力を獲得できます。",
-    "subtitleHighlight": "私たちは未来を予測しません。確率のみを統計化します。",
-    "ctaPrimary": "戦略を確認",
-    "ctaSecondary": "ホワイトペーパー V1.3 をダウンロード",
+    "badge": "AI Quant Engine for Web3 Markets",
+    "title": "Crypto-K Quants",
+    "titleHighlight": "AI Quant Engine for Web3 Markets",
+    "subtitle": "市場データ、オンチェーン資金フロー、デリバティブ指標、AI モデルを接続し、暗号資産市場向けの次世代クォント意思決定システムを構築します。",
+    "subtitleHighlight": "意思決定支援、リスク管理フローの強化、感情的な操作の低減。",
+    "ctaPrimary": "Access Quant Dashboard",
+    "ctaSecondary": "Explore Technology Stack",
     "stats": {
-      "latency": "実行レイテンシ",
-      "uptime": "稼働時間",
-      "model": "マルチタイムフレーム",
-      "monitor": "リスク監視"
+      "latency": "市場監視",
+      "uptime": "モデルスコア",
+      "model": "リスク承認",
+      "monitor": "オンチェーンレーダー"
     }
   },
   "features": {
     "title": "コア技術スタック",
     "subtitle": "CORE TECHNOLOGY STACK",
     "kModel": {
-      "title": "K-Model 共鳴エンジン",
-      "description": "単一指標に依存しません。15m / 1H / 4H のマルチタイムフレームシグナルを同時に監視し、トレンドが共鳴する時のみ取引をトリガーし、市場ノイズの誤判断を大幅に削減します。"
+      "title": "Market Flow マルチ資金フロー洞察",
+      "description": "ローソク足の上げ下げだけを見ません。システムは出来高、未決済建玉 OI、資金調達率、清算データ、注文板構造を同時に分析し、価格の背後にある資金行動を捉えることで、偽の急騰、偽ブレイク、振り落としに惑わされにくくします。"
     },
     "aiTrading": {
-      "title": "DL-Signal 深層学習",
-      "description": "LSTM と Transformer アーキテクチャで訓練されたシグナルフィルター。偽のブレイクアウト（False Breakout）と極端な市場構造を効果的に識別し、ブラックスワンイベントでの清算を回避します。"
+      "title": "MTF Engine マルチタイムフレーム共鳴",
+      "description": "システムは 5M / 15M / 1H など複数時間軸のトレンド構造を同時に監視します。短期足でエントリー、中期足で方向、上位足で環境を見極め、複数時間軸の方向がそろった時のみシグナルの重みを高めます。"
     },
     "riskControl": {
-      "title": "Risk Budgeting リスク管理",
-      "description": "損失を制御し、利益は制御しません。システムには厳格なドローダウンバジェットと自動エクスポージャー削減メカニズム（De-risking）が組み込まれており、資本の安全性が常に利益成長より優先されます。"
+      "title": "AI-Signal スマートスコアリング",
+      "description": "機械学習モデルとマルチファクター特徴量設計に基づき、各候補機会をスコア化します。単に変動があるだけで通知するのではなく、トレンド強度、出来高変化、資金面、重要価格帯、市場状態を総合して、より質の高い取引機会を選別します。"
     },
     "signalProcessing": {
-      "title": "シグナル処理エンジン",
-      "description": "TradingView Webhook シグナル統合をサポートし、マルチ戦略シグナルのリアルタイム処理、インテリジェントルーティングと実行により、シグナルがタイムリーに応答されます。"
+      "title": "Risk Gate リスク承認",
+      "description": "リスクを制御し、むやみに建玉を持ちません。シグナル実行前にデータ鮮度、トレンド一致、ポジション競合、損切り余地、リスクリワード、スリッページリスクを確認し、取引に適さない機会を発注前に止めます。"
+    },
+    "shadowRun": {
+      "title": "Semi-Auto 実行ループ",
+      "description": "AI による機会認識、リスク検証、人による確認、半自動実行の流れを採用します。システムはエントリー、損切り、利確、実行状態追跡を事前に設定でき、直前の迷い、感情的な追随、利益の戻しを減らすことを支援します。"
     },
     "multiExchange": {
       "title": "マルチ取引所サポート",
       "description": "主要な複数の取引所を統合し、統一インターフェース管理、現物およびデリバティブ取引をサポートし、柔軟な取引ルール設定が可能です。"
+    }
+  },
+  "web3": {
+    "onchain": {
+      "eyebrow": "ON-CHAIN FLOW RADAR",
+      "title": "On-chain Flow Radar",
+      "subtitle": "オンチェーン資金レーダー",
+      "description": "価格の上下だけでなく、価格の背後にある資金フロー、ポジション変化、清算圧力、市場の混雑度を追跡します。",
+      "cards": {
+        "whale": {
+          "label": "Whale Flow クジラフロー",
+          "value": "Active",
+          "caption": "大口ウォレット活動"
+        },
+        "netflow": {
+          "label": "Exchange Netflow 取引所純フロー",
+          "value": "Outflow",
+          "caption": "取引所残高変化"
+        },
+        "stablecoin": {
+          "label": "Stablecoin Flow ステーブルコインフロー",
+          "value": "Increasing",
+          "caption": "待機資金モニター"
+        },
+        "liquidation": {
+          "label": "Liquidation Pressure 清算圧力",
+          "value": "Medium",
+          "caption": "レバレッジヒートマップ"
+        },
+        "oi": {
+          "label": "Open Interest OI 建玉変化",
+          "value": "Rising",
+          "caption": "デリバティブ混雑度"
+        },
+        "funding": {
+          "label": "Funding Rate 資金調達率バイアス",
+          "value": "Slight Long",
+          "caption": "ロング・ショートプレミアム"
+        }
+      }
+    },
+    "pipeline": {
+      "eyebrow": "AI DECISION PIPELINE",
+      "title": "AI Decision Pipeline",
+      "subtitle": "データから実行まで、すべての段階を検証可能",
+      "description": "市場データ、特徴量設計、AI シグナルスコア、リスク承認、人による確認、半自動実行を透明で追跡可能な意思決定ループとして接続します。",
+      "steps": {
+        "market": {
+          "title": "Market Data Input",
+          "subtitle": "市場データ入力"
+        },
+        "feature": {
+          "title": "Feature Engineering",
+          "subtitle": "特徴量加工"
+        },
+        "scoring": {
+          "title": "AI Signal Scoring",
+          "subtitle": "AI シグナルスコア"
+        },
+        "risk": {
+          "title": "Risk Gate",
+          "subtitle": "リスク承認ゲート"
+        },
+        "approval": {
+          "title": "Manual Approval",
+          "subtitle": "人による確認"
+        },
+        "execution": {
+          "title": "Semi-Auto Execution",
+          "subtitle": "半自動実行"
+        },
+        "shadow": {
+          "title": "Shadow Validation",
+          "subtitle": "シャドー検証バックテスト"
+        }
+      }
+    },
+    "command": {
+      "eyebrow": "QUANT COMMAND CENTER",
+      "title": "Quant Command Center",
+      "subtitle": "クォント指揮センター",
+      "description": "市場状態、モデルシグナル、リスクゲート、実行モードを集中表示し、主観的なチャート監視からシステム化された意思決定へ移行します。",
+      "metrics": {
+        "btc": {
+          "label": "BTC Market State",
+          "value": "Trend"
+        },
+        "eth": {
+          "label": "ETH Signal Strength",
+          "value": "72%"
+        },
+        "risk": {
+          "label": "Risk Gate",
+          "value": "Passed"
+        },
+        "volatility": {
+          "label": "Volatility",
+          "value": "Normal"
+        },
+        "liquidity": {
+          "label": "Liquidity",
+          "value": "Good"
+        },
+        "model": {
+          "label": "Model Status",
+          "value": "Advisory"
+        },
+        "execution": {
+          "label": "Execution Mode",
+          "value": "Manual Confirm"
+        },
+        "shadow": {
+          "label": "Shadow Validation",
+          "value": "Running"
+        }
+      },
+      "pills": {
+        "signal": "Signal Score",
+        "risk": "Risk Gate",
+        "passed": "Passed",
+        "execution": "Execution",
+        "manual": "Manual Confirm"
+      }
+    },
+    "wallet": {
+      "eyebrow": "ACCESS LAYER",
+      "title": "Web3 Identity Access",
+      "description": "ウォレットID入口は将来、会員権限、戦略アクセス、オンチェーンID証明、高度なクォントパネルに使用される可能性があります。現在のバージョンは表示用であり、資金の保管や自動取引承認には関係しません。",
+      "notes": {
+        "wallet": "ウォレット権限要求なし",
+        "transfer": "送金承認なし",
+        "execution": "取引実行接続なし"
+      }
     }
   },
   "pricing": {
@@ -53,9 +191,11 @@
       "period": "USDT / 月",
       "description": "システムの安定性を低コストで検証するのに適しています",
       "features": {
-        "strategy": "保守的なトレンド戦略 1 つ",
+        "strategy": "アグレッシブ戦略 6-10 本",
         "position": "固定低ポジション設定",
         "delay": "シグナル遅延 30-60 秒",
+        "resonance": "15m/1H/4H マルチタイムフレーム共鳴",
+        "api": "リアルタイム API スマートコピートレード",
         "notification": "Telegram 基本プッシュ"
       },
       "cta": "体験を開始"
@@ -67,11 +207,12 @@
       "period": "USDT / 月",
       "description": "真剣に取引する長期主義者に適しています",
       "features": {
-        "strategies": "コア戦略 2-3 つ（トレンド+ブレイクアウト）",
-        "resonance": "15m/1H/4H マルチタイムフレーム共鳴",
+        "strategies": "コア戦略 8-16 本",
+        "resonance": "15m/1H/4H/1D マルチタイムフレーム共鳴",
         "api": "リアルタイム API インテリジェントコピートレード",
         "risk": "基本リスク管理パラメータ設定",
-        "report": "月次戦略レビューレポート"
+        "report": "月次戦略レビューレポート",
+        "notification": "Telegram 予警プッシュ"
       },
       "cta": "今すぐ購読"
     },
@@ -129,7 +270,7 @@
       "contact": "お問い合わせ",
       "business": "ビジネス協力"
     },
-    "risk": "重要なリスク警告：暗号通貨取引は極めて高い市場リスクを伴います。Crypto-K Quants が提供するすべての戦略、シグナル、バックテストデータは参考用であり、いかなる投資アドバイスも構成しません。過去のリターンは将来のパフォーマンスを表すものではありません。ユーザーは常にアカウント権限を独立して制御し、コピートレードによる資本損失のリスクを自己負担する必要があります。本サービスは「元本保証」または「利益保証」サービスを提供しません。",
+    "risk": "リスク告知：Crypto-K Quants はクォントリサーチ、市場分析、取引意思決定支援システムを提供するものであり、投資助言または収益の約束ではありません。暗号資産およびデリバティブ取引には高い変動性、レバレッジ、リスクが伴うため、ユーザーは自身のリスク許容度に基づき独立して判断してください。",
     "copyright": "© 2024 Crypto-K Quants. All rights reserved.",
     "privacy": "プライバシーポリシー",
     "terms": "利用規約"

@@ -7,41 +7,179 @@
     "appDownload": "APP下載"
   },
   "hero": {
-    "badge": "機構級交易系統",
-    "title": "像韓國量化團隊一樣交易",
-    "subtitle": "來自知名量化團隊實驗室的量化模型與嚴格風控，讓普通投資者也能擁有機構級交易能力。",
-    "subtitleHighlight": "我們不預測未來，我們只統計機率。",
-    "ctaPrimary": "立即查看策略",
-    "ctaSecondary": "下載白皮書 V1.3",
+    "badge": "AI Quant Engine for Web3 Markets",
+    "title": "Crypto-K Quants",
+    "titleHighlight": "AI Quant Engine for Web3 Markets",
+    "subtitle": "連接行情數據、鏈上資金流、衍生品指標與 AI 模型，構建面向加密貨幣市場的下一代量化交易決策系統。",
+    "subtitleHighlight": "輔助決策、強化風控流程、減少情緒化操作。",
+    "ctaPrimary": "Access Quant Dashboard",
+    "ctaSecondary": "Explore Technology Stack",
     "stats": {
-      "latency": "執行延遲",
-      "uptime": "運行時間",
-      "model": "多週期",
-      "monitor": "風控監控"
+      "latency": "市場監控",
+      "uptime": "模型評分",
+      "model": "風控准入",
+      "monitor": "鏈上雷達"
     }
   },
   "features": {
     "title": "核心技術架構",
     "subtitle": "CORE TECHNOLOGY STACK",
     "kModel": {
-      "title": "K-Model 共振引擎",
-      "description": "不再依賴單一指標。我們同時監測 15m / 1H / 4H 多週期訊號，只有當趨勢產生共振時才觸發交易，大幅降低市場噪音誤判。"
+      "title": "Market Flow 多源資金洞察",
+      "description": "融合 K 線、成交量、OI、資金費率、清算與盤口數據，識別價格背後的真實資金動作，減少被單一圖形誤導。"
     },
     "aiTrading": {
-      "title": "DL-Signal 深度學習",
-      "description": "基於 LSTM 與 Transformer 架構訓練的訊號過濾器。有效識別假突破（False Breakout）與極端行情結構，避免在黑天鵝中被清算。"
+      "title": "MTF Engine 多週期共振",
+      "description": "同步分析 5M / 15M / 1H 趨勢結構，短線找入場，中線定方向，幫助過濾假突破與短線噪音。"
     },
     "riskControl": {
-      "title": "Risk Budgeting 風控",
-      "description": "控制虧損，不控制盈利。系統內建嚴格的回撤預算與自動削減暴露機制（De-risking），確保本金安全永遠優於收益增長。"
+      "title": "AI-Signal 智能評分",
+      "description": "基於機器學習與多因子模型，為每個交易機會打分，過濾低質量波動，優先識別更具結構優勢的訊號。"
     },
     "signalProcessing": {
-      "title": "訊號處理引擎",
-      "description": "支援 TradingView Webhook 訊號接入，實時處理多策略訊號，智慧路由與執行，確保訊號及時響應。"
+      "title": "Risk Gate 風控准入",
+      "description": "在下單前完成趨勢、倉位、止損、盈虧比和滑點檢查，先判斷能不能做，再判斷怎麼做。"
+    },
+    "shadowRun": {
+      "title": "Semi-Auto 執行閉環",
+      "description": "通過人工確認、止盈止損預設和執行追蹤，減少情緒化操作，幫助控制利潤回吐和回撤擴大。"
     },
     "multiExchange": {
       "title": "多交易所支援",
       "description": "整合主流多交易所，統一介面管理，支援現貨與衍生品交易，靈活配置交易規則。"
+    }
+  },
+  "web3": {
+    "onchain": {
+      "eyebrow": "ON-CHAIN FLOW RADAR",
+      "title": "On-chain Flow Radar",
+      "subtitle": "鏈上資金雷達",
+      "description": "不只觀察價格漲跌，更追蹤價格背後的資金流、持倉變化、清算壓力與市場擁擠度。",
+      "cards": {
+        "whale": {
+          "label": "Whale Flow 巨鯨流動",
+          "value": "Active",
+          "caption": "大額錢包活躍度"
+        },
+        "netflow": {
+          "label": "Exchange Netflow 交易所淨流",
+          "value": "Outflow",
+          "caption": "交易所餘額變化"
+        },
+        "stablecoin": {
+          "label": "Stablecoin Flow 穩定幣資金流",
+          "value": "Increasing",
+          "caption": "場外資金觀察"
+        },
+        "liquidation": {
+          "label": "Liquidation Pressure 清算壓力",
+          "value": "Medium",
+          "caption": "槓桿熱度監控"
+        },
+        "oi": {
+          "label": "Open Interest OI 持倉變化",
+          "value": "Rising",
+          "caption": "衍生品擁擠度"
+        },
+        "funding": {
+          "label": "Funding Rate 資金費率偏向",
+          "value": "Slight Long",
+          "caption": "多空溢價狀態"
+        }
+      }
+    },
+    "pipeline": {
+      "eyebrow": "AI DECISION PIPELINE",
+      "title": "AI Decision Pipeline",
+      "subtitle": "從數據到執行，每一步都可驗證",
+      "description": "系統將市場數據、特徵工程、AI 訊號評分、風控准入、人工確認與半自動執行連接成完整閉環，讓交易決策更透明、更可追蹤。",
+      "steps": {
+        "market": {
+          "title": "Market Data Input",
+          "subtitle": "市場數據輸入"
+        },
+        "feature": {
+          "title": "Feature Engineering",
+          "subtitle": "特徵工程加工"
+        },
+        "scoring": {
+          "title": "AI Signal Scoring",
+          "subtitle": "AI 訊號評分"
+        },
+        "risk": {
+          "title": "Risk Gate",
+          "subtitle": "風控准入閘門"
+        },
+        "approval": {
+          "title": "Manual Approval",
+          "subtitle": "人工確認審核"
+        },
+        "execution": {
+          "title": "Semi-Auto Execution",
+          "subtitle": "半自動執行"
+        },
+        "shadow": {
+          "title": "Shadow Validation",
+          "subtitle": "影子驗證回測"
+        }
+      }
+    },
+    "command": {
+      "eyebrow": "QUANT COMMAND CENTER",
+      "title": "Quant Command Center",
+      "subtitle": "量化指揮中心",
+      "description": "集中展示市場狀態、模型訊號、風險閘門與執行模式，讓交易員從主觀看盤升級為系統化決策。",
+      "metrics": {
+        "btc": {
+          "label": "BTC Market State",
+          "value": "Trend"
+        },
+        "eth": {
+          "label": "ETH Signal Strength",
+          "value": "72%"
+        },
+        "risk": {
+          "label": "Risk Gate",
+          "value": "Passed"
+        },
+        "volatility": {
+          "label": "Volatility",
+          "value": "Normal"
+        },
+        "liquidity": {
+          "label": "Liquidity",
+          "value": "Good"
+        },
+        "model": {
+          "label": "Model Status",
+          "value": "Advisory"
+        },
+        "execution": {
+          "label": "Execution Mode",
+          "value": "Manual Confirm"
+        },
+        "shadow": {
+          "label": "Shadow Validation",
+          "value": "Running"
+        }
+      },
+      "pills": {
+        "signal": "Signal Score",
+        "risk": "Risk Gate",
+        "passed": "Passed",
+        "execution": "Execution",
+        "manual": "Manual Confirm"
+      }
+    },
+    "wallet": {
+      "eyebrow": "ACCESS LAYER",
+      "title": "Web3 Identity Access",
+      "description": "錢包身份入口將用於未來的會員權限、策略訪問、鏈上身份憑證與高級量化面板。當前版本僅作為展示入口，不涉及資金託管或自動交易授權。",
+      "notes": {
+        "wallet": "不請求錢包授權",
+        "transfer": "不涉及轉帳批准",
+        "execution": "不接入交易執行"
+      }
     }
   },
   "pricing": {
@@ -53,9 +191,11 @@
       "period": "USDT / 月",
       "description": "適合低成本驗證系統穩定性",
       "features": {
-        "strategy": "1 條保守型趨勢策略",
+        "strategy": "6-10 條激進策略",
         "position": "固定低倉位配置",
         "delay": "訊號延遲 30-60s",
+        "resonance": "15m/1H/4H 多週期共振",
+        "api": "即時 API 智慧跟單",
         "notification": "Telegram 基礎推送"
       },
       "cta": "開始體驗"
@@ -67,11 +207,12 @@
       "period": "USDT / 月",
       "description": "適合認真交易的長期主義者",
       "features": {
-        "strategies": "2-3 條核心策略 (趨勢+突破)",
-        "resonance": "15m/1H/4H 多週期共振",
+        "strategies": "8-16 條核心策略",
+        "resonance": "15m/1H/4H/1D 多週期共振",
         "api": "實時 API 智慧跟單",
         "risk": "基礎風控參數配置",
-        "report": "月度策略複盤報告"
+        "report": "月度策略複盤報告",
+        "notification": "Telegram 預警推送"
       },
       "cta": "立即訂閱"
     },
@@ -129,7 +270,7 @@
       "contact": "聯絡我們",
       "business": "商務合作"
     },
-    "risk": "重要風險提示：加密資產交易具有極高的市場風險。Crypto-K Quants 提供的所有策略、訊號與回測數據僅供參考，不構成任何投資建議。歷史收益不代表未來表現。用戶應始終獨立控制帳戶權限，並自行承擔因跟單產生的資金損失風險。本服務不提供\"保本\"或\"承諾收益\"服務。",
+    "risk": "風險提示：Crypto-K Quants 提供的是量化研究、市場分析和交易輔助決策系統，不構成任何投資建議或收益承諾。加密貨幣及合約交易具有高波動、高槓桿和高風險特徵，用戶應根據自身風險承受能力獨立決策。",
     "copyright": "© 2024 Crypto-K Quants. All rights reserved.",
     "privacy": "隱私協議",
     "terms": "服務條款"

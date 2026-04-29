@@ -4,22 +4,28 @@ const supportedLocales = ['zh-CN', 'zh-TW', 'ko-KR', 'en-US', 'ja-JP'] as const
 export type Locale = typeof supportedLocales[number]
 
 const geoIpUrl = 'https://ipwho.is/?fields=country_code'
+const localeStorageKey = 'locale'
+const localePreferenceSourceKey = 'localePreferenceSource'
+const manualPreferenceSource = 'manual'
 
 function mapCountryToLocale(countryCode: string | null): Locale {
-  switch (countryCode) {
+  switch (countryCode?.toUpperCase()) {
     case 'CN':
       return 'zh-CN'
     case 'TW':
+    case 'HK':
       return 'zh-TW'
     case 'KR':
       return 'ko-KR'
     case 'JP':
       return 'ja-JP'
-    case 'US':
-      return 'en-US'
     default:
       return 'en-US'
   }
+}
+
+function isSupportedLocale(value: string | null): value is Locale {
+  return supportedLocales.includes(value as Locale)
 }
 
 async function fetchCountryCode(): Promise<string | null> {
@@ -51,17 +57,24 @@ export const useI18nStore = defineStore('i18n', {
   actions: {
     setLocale(newLocale: Locale) {
       this.locale = newLocale
-      localStorage.setItem('locale', newLocale)
+      localStorage.setItem(localeStorageKey, newLocale)
+      localStorage.setItem(localePreferenceSourceKey, manualPreferenceSource)
     },
     
     async initLocale() {
-      const saved = localStorage.getItem('locale') as Locale | null
-      if (saved && supportedLocales.includes(saved)) {
+      const saved = localStorage.getItem(localeStorageKey)
+      const preferenceSource = localStorage.getItem(localePreferenceSourceKey)
+
+      if (isSupportedLocale(saved) && preferenceSource === manualPreferenceSource) {
         this.locale = saved
-      } else {
-        const countryCode = await fetchCountryCode()
-        this.locale = mapCountryToLocale(countryCode)
-        localStorage.setItem('locale', this.locale)
+        return
+      }
+
+      const countryCode = await fetchCountryCode()
+      this.locale = mapCountryToLocale(countryCode)
+
+      if (saved && !isSupportedLocale(saved)) {
+        localStorage.removeItem(localeStorageKey)
       }
     }
   }

@@ -7,41 +7,179 @@
     "appDownload": "앱 다운로드"
   },
   "hero": {
-    "badge": "기관급 거래 시스템",
-    "title": "한국 퀀트처럼 거래하세요",
-    "subtitle": "유명 퀀트 팀 연구소의 퀀트 모델과 엄격한 리스크 관리로 일반 투자자도 기관급 거래 능력을 갖출 수 있습니다.",
-    "subtitleHighlight": "우리는 미래를 예측하지 않습니다. 우리는 확률만 통계화합니다.",
-    "ctaPrimary": "전략 확인하기",
-    "ctaSecondary": "백서 V1.3 다운로드",
+    "badge": "AI Quant Engine for Web3 Markets",
+    "title": "Crypto-K Quants",
+    "titleHighlight": "AI Quant Engine for Web3 Markets",
+    "subtitle": "시장 데이터, 온체인 자금 흐름, 파생상품 지표, AI 모델을 연결해 암호화폐 시장을 위한 차세대 퀀트 의사결정 시스템을 구축합니다.",
+    "subtitleHighlight": "의사결정 보조, 리스크 프로세스 강화, 감정적 실행 감소.",
+    "ctaPrimary": "Access Quant Dashboard",
+    "ctaSecondary": "Explore Technology Stack",
     "stats": {
-      "latency": "실행 지연",
-      "uptime": "가동 시간",
-      "model": "다중 시간대",
-      "monitor": "리스크 모니터링"
+      "latency": "시장 모니터링",
+      "uptime": "모델 스코어링",
+      "model": "리스크 승인",
+      "monitor": "온체인 레이더"
     }
   },
   "features": {
     "title": "핵심 기술 아키텍처",
     "subtitle": "CORE TECHNOLOGY STACK",
     "kModel": {
-      "title": "K-Model 공진 엔진",
-      "description": "단일 지표에 의존하지 않습니다. 15m / 1H / 4H 다중 시간대 신호를 동시에 모니터링하며, 트렌드가 공진할 때만 거래를 트리거하여 시장 노이즈 오판을 크게 줄입니다."
+      "title": "Market Flow 다중 자금 흐름 인사이트",
+      "description": "더 이상 캔들 상승과 하락만 보지 않습니다. 시스템은 거래량, 미결제약정 OI, 펀딩비, 청산 데이터, 오더북 구조를 함께 분석해 가격 뒤의 자금 행동을 파악하고 가짜 펌핑, 가짜 돌파, 흔들기에 덜 휘둘리도록 돕습니다."
     },
     "aiTrading": {
-      "title": "DL-Signal 딥러닝",
-      "description": "LSTM과 Transformer 아키텍처로 훈련된 신호 필터. 가짜 돌파(False Breakout)와 극단적 시장 구조를 효과적으로 식별하여 블랙스완 상황에서 청산을 피합니다."
+      "title": "MTF Engine 다중 시간대 공진",
+      "description": "시스템은 5M / 15M / 1H 등 다중 시간대 추세 구조를 동시에 모니터링합니다. 단기 시간대는 진입, 중기 시간대는 방향, 상위 시간대는 시장 환경을 판단하며, 여러 시간대 방향이 일치할 때만 신호 가중치를 높입니다."
     },
     "riskControl": {
-      "title": "Risk Budgeting 리스크 관리",
-      "description": "손실을 제어하고 수익은 제어하지 않습니다. 시스템에 엄격한 낙폭 예산과 자동 노출 감소 메커니즘(De-risking)이 내장되어 있어 원금 안전이 항상 수익 성장보다 우선합니다."
+      "title": "AI-Signal 스마트 스코어링",
+      "description": "머신러닝 모델과 다중 팩터 피처 엔지니어링을 기반으로 각 후보 기회를 평가합니다. 단순히 변동성이 있다고 알리는 것이 아니라 추세 강도, 거래량 변화, 자금 흐름, 핵심 가격대, 시장 상태를 종합해 더 높은 품질의 거래 기회를 선별합니다."
     },
     "signalProcessing": {
-      "title": "신호 처리 엔진",
-      "description": "TradingView Webhook 신호 접속을 지원하며, 실시간으로 다중 전략 신호를 처리하고 지능형 라우팅과 실행을 보장하여 신호가 즉시 응답됩니다."
+      "title": "Risk Gate 리스크 승인",
+      "description": "리스크를 통제하고 무분별한 진입을 피합니다. 시스템은 신호 실행 전 데이터 신선도, 추세 일치성, 포지션 충돌, 손절 공간, 손익비, 슬리피지 리스크를 확인해 적합하지 않은 기회를 주문 전에 차단합니다."
+    },
+    "shadowRun": {
+      "title": "Semi-Auto 실행 루프",
+      "description": "AI 기회 인식, 리스크 검증, 사람의 확인, 반자동 실행 흐름을 사용합니다. 시스템은 진입, 손절, 익절, 실행 상태 추적을 미리 설정할 수 있어 거래자의 순간 망설임, 감정적 추격, 수익 반납을 줄이는 데 도움을 줍니다."
     },
     "multiExchange": {
       "title": "다중 거래소 지원",
       "description": "주요 다중 거래소를 통합하여 통합 인터페이스로 관리하며, 현물 및 파생상품 거래를 지원하고 거래 규칙을 유연하게 구성할 수 있습니다."
+    }
+  },
+  "web3": {
+    "onchain": {
+      "eyebrow": "ON-CHAIN FLOW RADAR",
+      "title": "On-chain Flow Radar",
+      "subtitle": "온체인 자금 레이더",
+      "description": "가격 상승과 하락만 보는 것이 아니라 가격 뒤의 자금 흐름, 포지션 변화, 청산 압력, 시장 혼잡도를 추적합니다.",
+      "cards": {
+        "whale": {
+          "label": "Whale Flow 고래 흐름",
+          "value": "Active",
+          "caption": "대형 지갑 활동"
+        },
+        "netflow": {
+          "label": "Exchange Netflow 거래소 순유입",
+          "value": "Outflow",
+          "caption": "거래소 잔고 변화"
+        },
+        "stablecoin": {
+          "label": "Stablecoin Flow 스테이블코인 흐름",
+          "value": "Increasing",
+          "caption": "대기 자금 모니터"
+        },
+        "liquidation": {
+          "label": "Liquidation Pressure 청산 압력",
+          "value": "Medium",
+          "caption": "레버리지 열도"
+        },
+        "oi": {
+          "label": "Open Interest OI 미결제약정",
+          "value": "Rising",
+          "caption": "파생상품 혼잡도"
+        },
+        "funding": {
+          "label": "Funding Rate 펀딩비 편향",
+          "value": "Slight Long",
+          "caption": "롱숏 프리미엄"
+        }
+      }
+    },
+    "pipeline": {
+      "eyebrow": "AI DECISION PIPELINE",
+      "title": "AI Decision Pipeline",
+      "subtitle": "데이터부터 실행까지, 모든 단계가 검증 가능합니다",
+      "description": "시스템은 시장 데이터, 피처 엔지니어링, AI 신호 점수화, 리스크 승인, 사람의 확인, 반자동 실행을 하나의 추적 가능한 의사결정 루프로 연결합니다.",
+      "steps": {
+        "market": {
+          "title": "Market Data Input",
+          "subtitle": "시장 데이터 입력"
+        },
+        "feature": {
+          "title": "Feature Engineering",
+          "subtitle": "피처 엔지니어링"
+        },
+        "scoring": {
+          "title": "AI Signal Scoring",
+          "subtitle": "AI 신호 점수화"
+        },
+        "risk": {
+          "title": "Risk Gate",
+          "subtitle": "리스크 승인 게이트"
+        },
+        "approval": {
+          "title": "Manual Approval",
+          "subtitle": "수동 확인 검토"
+        },
+        "execution": {
+          "title": "Semi-Auto Execution",
+          "subtitle": "반자동 실행"
+        },
+        "shadow": {
+          "title": "Shadow Validation",
+          "subtitle": "섀도우 검증 백테스트"
+        }
+      }
+    },
+    "command": {
+      "eyebrow": "QUANT COMMAND CENTER",
+      "title": "Quant Command Center",
+      "subtitle": "퀀트 커맨드 센터",
+      "description": "시장 상태, 모델 신호, 리스크 게이트, 실행 모드를 한곳에 표시해 주관적 차트 관찰을 시스템화된 의사결정으로 전환합니다.",
+      "metrics": {
+        "btc": {
+          "label": "BTC Market State",
+          "value": "Trend"
+        },
+        "eth": {
+          "label": "ETH Signal Strength",
+          "value": "72%"
+        },
+        "risk": {
+          "label": "Risk Gate",
+          "value": "Passed"
+        },
+        "volatility": {
+          "label": "Volatility",
+          "value": "Normal"
+        },
+        "liquidity": {
+          "label": "Liquidity",
+          "value": "Good"
+        },
+        "model": {
+          "label": "Model Status",
+          "value": "Advisory"
+        },
+        "execution": {
+          "label": "Execution Mode",
+          "value": "Manual Confirm"
+        },
+        "shadow": {
+          "label": "Shadow Validation",
+          "value": "Running"
+        }
+      },
+      "pills": {
+        "signal": "Signal Score",
+        "risk": "Risk Gate",
+        "passed": "Passed",
+        "execution": "Execution",
+        "manual": "Manual Confirm"
+      }
+    },
+    "wallet": {
+      "eyebrow": "ACCESS LAYER",
+      "title": "Web3 Identity Access",
+      "description": "지갑 신원 입구는 향후 회원 권한, 전략 접근, 온체인 신원 증명, 고급 퀀트 패널에 사용될 수 있습니다. 현재 버전은 전시용이며 자금 수탁이나 자동 거래 권한과 관련이 없습니다.",
+      "notes": {
+        "wallet": "지갑 권한 요청 없음",
+        "transfer": "전송 승인 없음",
+        "execution": "거래 실행 연결 없음"
+      }
     }
   },
   "pricing": {
@@ -53,9 +191,11 @@
       "period": "USDT / 월",
       "description": "시스템 안정성을 저비용으로 검증하기에 적합",
       "features": {
-        "strategy": "보수형 트렌드 전략 1개",
+        "strategy": "공격형 전략 6-10개",
         "position": "고정 낮은 포지션 구성",
         "delay": "신호 지연 30-60초",
+        "resonance": "15m/1H/4H 다중 시간대 공진",
+        "api": "실시간 API 스마트 카피 트레이딩",
         "notification": "Telegram 기본 푸시"
       },
       "cta": "체험 시작"
@@ -67,11 +207,12 @@
       "period": "USDT / 월",
       "description": "진지하게 거래하는 장기주의자에게 적합",
       "features": {
-        "strategies": "핵심 전략 2-3개 (트렌드+돌파)",
-        "resonance": "15m/1H/4H 다중 시간대 공진",
+        "strategies": "핵심 전략 8-16개",
+        "resonance": "15m/1H/4H/1D 다중 시간대 공진",
         "api": "실시간 API 지능형 복사 거래",
         "risk": "기본 리스크 관리 매개변수 구성",
-        "report": "월간 전략 복습 보고서"
+        "report": "월간 전략 복습 보고서",
+        "notification": "Telegram 경고 푸시"
       },
       "cta": "즉시 구독"
     },
@@ -129,7 +270,7 @@
       "contact": "문의하기",
       "business": "비즈니스 협력"
     },
-    "risk": "중요한 리스크 고지: 암호화폐 자산 거래는 매우 높은 시장 리스크를 수반합니다. Crypto-K Quants가 제공하는 모든 전략, 신호 및 백테스트 데이터는 참고용이며 어떠한 투자 조언도 구성하지 않습니다. 과거 수익은 미래 성과를 나타내지 않습니다. 사용자는 항상 계정 권한을 독립적으로 제어하고 복사 거래로 인한 자금 손실 위험을 스스로 부담해야 합니다. 본 서비스는 '원금 보장' 또는 '수익 보장' 서비스를 제공하지 않습니다.",
+    "risk": "리스크 고지: Crypto-K Quants는 퀀트 리서치, 시장 분석, 거래 의사결정 보조 시스템을 제공하며 투자 조언이나 수익 약속을 의미하지 않습니다. 암호화폐 및 파생상품 거래는 높은 변동성, 레버리지, 리스크를 수반하므로 사용자는 자신의 위험 감내 수준에 따라 독립적으로 판단해야 합니다.",
     "copyright": "© 2024 Crypto-K Quants. All rights reserved.",
     "privacy": "개인정보 보호 정책",
     "terms": "서비스 약관"

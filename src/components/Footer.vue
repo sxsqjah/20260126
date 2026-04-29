@@ -47,7 +47,7 @@
       </div>
       
       <div class="border-t border-white/10 pt-10">
-        <div class="p-4 bg-red-900/10 border border-red-900/30 rounded text-xs text-red-200/60 mb-8 leading-relaxed">
+        <div class="p-4 bg-red-900/10 border border-red-900/40 rounded text-xs text-red-100/80 mb-8 leading-relaxed">
           {{ $t('footer.risk') }}
         </div>
         <div class="flex flex-col md:flex-row justify-between items-center text-xs text-gray-600">

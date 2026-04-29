@@ -7,41 +7,110 @@
     "appDownload": "Download APP"
   },
   "hero": {
-    "badge": "Institutional Grade Trading System",
-    "title": "Trade like a Korean Quant",
-    "subtitle": "With quantitative models from renowned quantitative team laboratories and strict risk control, ordinary investors can also have institutional-level trading capabilities.",
-    "subtitleHighlight": "We don't predict the future, we only calculate probabilities.",
-    "ctaPrimary": "View Strategies",
-    "ctaSecondary": "Download Whitepaper V1.3",
+    "badge": "AI Quant Engine for Web3 Markets",
+    "title": "Crypto-K Quants",
+    "titleHighlight": "AI Quant Engine for Web3 Markets",
+    "subtitle": "Connecting market data, on-chain capital flow, derivatives indicators, and AI models into a next-generation crypto trading decision system.",
+    "subtitleHighlight": "Decision support, stronger risk workflow, and less emotional execution.",
+    "ctaPrimary": "Access Quant Dashboard",
+    "ctaSecondary": "Explore Technology Stack",
     "stats": {
-      "latency": "Execution Latency",
-      "uptime": "Uptime",
-      "model": "Multi-Timeframe",
-      "monitor": "Risk Monitor"
+      "latency": "Market Monitor",
+      "uptime": "AI Scoring",
+      "model": "Risk Gate",
+      "monitor": "On-chain Radar"
     }
   },
   "features": {
     "title": "Core Technology Stack",
     "subtitle": "CORE TECHNOLOGY STACK",
     "kModel": {
-      "title": "K-Model Resonance Engine",
-      "description": "No longer relying on a single indicator. We simultaneously monitor 15m / 1H / 4H multi-timeframe signals, and only trigger trades when trends resonate, significantly reducing market noise misjudgment."
+      "title": "Market Flow Capital Insight",
+      "description": "Combines candles, volume, OI, funding rates, liquidations, and order-book data to identify capital behavior behind price moves and reduce single-pattern misreads."
     },
     "aiTrading": {
-      "title": "DL-Signal Deep Learning",
-      "description": "Signal filter trained on LSTM and Transformer architectures. Effectively identifies false breakouts and extreme market structures, avoiding liquidation in black swan events."
+      "title": "MTF Engine Multi-Timeframe Resonance",
+      "description": "Analyzes 5M / 15M / 1H trend structures together: short timeframes for entry and mid timeframes for direction, helping filter false breakouts and short-term noise."
     },
     "riskControl": {
-      "title": "Risk Budgeting Control",
-      "description": "Control losses, not profits. The system has built-in strict drawdown budgets and automatic exposure reduction mechanisms (De-risking), ensuring capital safety always takes precedence over profit growth."
+      "title": "AI-Signal Smart Scoring",
+      "description": "Uses machine learning and multi-factor models to score each opportunity, filter low-quality volatility, and prioritize signals with stronger structural advantage."
     },
     "signalProcessing": {
-      "title": "Signal Processing Engine",
-      "description": "Supports TradingView Webhook signal integration, real-time processing of multi-strategy signals, intelligent routing and execution, ensuring timely signal response."
+      "title": "Risk Gate Admission Control",
+      "description": "Checks trend, position, stop-loss room, risk-reward ratio, and slippage before order preparation, judging whether a setup is actionable before how to execute it."
+    },
+    "shadowRun": {
+      "title": "Semi-Auto Execution Loop",
+      "description": "Uses human confirmation, TP/SL presets, and execution tracking to reduce emotional decisions and help control profit giveback and drawdown expansion."
     },
     "multiExchange": {
       "title": "Multi-Exchange Support",
       "description": "Integrates with major multiple exchanges, unified interface management, supports spot and derivatives trading, flexible trading rule configuration."
+    }
+  },
+  "web3": {
+    "onchain": {
+      "eyebrow": "ON-CHAIN FLOW RADAR",
+      "title": "On-chain Flow Radar",
+      "subtitle": "On-chain Capital Radar",
+      "description": "Track not only price movement, but also the capital flow, position changes, liquidation pressure, and market crowding behind price.",
+      "cards": {
+        "whale": { "label": "Whale Flow", "value": "Active", "caption": "Large wallet movement" },
+        "netflow": { "label": "Exchange Netflow", "value": "Outflow", "caption": "Exchange balance shift" },
+        "stablecoin": { "label": "Stablecoin Flow", "value": "Increasing", "caption": "Dry powder monitor" },
+        "liquidation": { "label": "Liquidation Pressure", "value": "Medium", "caption": "Leverage heat map" },
+        "oi": { "label": "Open Interest OI", "value": "Rising", "caption": "Derivatives crowding" },
+        "funding": { "label": "Funding Rate Bias", "value": "Slight Long", "caption": "Long-short premium" }
+      }
+    },
+    "pipeline": {
+      "eyebrow": "AI DECISION PIPELINE",
+      "title": "AI Decision Pipeline",
+      "subtitle": "From data to execution, every step is verifiable",
+      "description": "The system connects market data, feature engineering, AI signal scoring, risk admission, manual approval, and semi-automated execution into a transparent and traceable decision loop.",
+      "steps": {
+        "market": { "title": "Market Data Input", "subtitle": "Market data input" },
+        "feature": { "title": "Feature Engineering", "subtitle": "Feature processing" },
+        "scoring": { "title": "AI Signal Scoring", "subtitle": "AI signal scoring" },
+        "risk": { "title": "Risk Gate", "subtitle": "Risk admission gate" },
+        "approval": { "title": "Manual Approval", "subtitle": "Human review" },
+        "execution": { "title": "Semi-Auto Execution", "subtitle": "Semi-auto execution" },
+        "shadow": { "title": "Shadow Validation", "subtitle": "Shadow backtest validation" }
+      }
+    },
+    "command": {
+      "eyebrow": "QUANT COMMAND CENTER",
+      "title": "Quant Command Center",
+      "subtitle": "Quant Command Center",
+      "description": "Centralizes market state, model signals, risk gates, and execution mode so traders can move from subjective chart watching to systematic decision making.",
+      "metrics": {
+        "btc": { "label": "BTC Market State", "value": "Trend" },
+        "eth": { "label": "ETH Signal Strength", "value": "72%" },
+        "risk": { "label": "Risk Gate", "value": "Passed" },
+        "volatility": { "label": "Volatility", "value": "Normal" },
+        "liquidity": { "label": "Liquidity", "value": "Good" },
+        "model": { "label": "Model Status", "value": "Advisory" },
+        "execution": { "label": "Execution Mode", "value": "Manual Confirm" },
+        "shadow": { "label": "Shadow Validation", "value": "Running" }
+      },
+      "pills": {
+        "signal": "Signal Score",
+        "risk": "Risk Gate",
+        "passed": "Passed",
+        "execution": "Execution",
+        "manual": "Manual Confirm"
+      }
+    },
+    "wallet": {
+      "eyebrow": "ACCESS LAYER",
+      "title": "Web3 Identity Access",
+      "description": "The wallet identity entry may support future membership access, strategy permissions, on-chain credentials, and advanced quant dashboards. This version is display-only and does not involve custody or automated trading authorization.",
+      "notes": {
+        "wallet": "No wallet request",
+        "transfer": "No transfer approval",
+        "execution": "No trading execution"
+      }
     }
   },
   "pricing": {
@@ -53,9 +122,11 @@
       "period": "USDT / month",
       "description": "Suitable for low-cost validation of system stability",
       "features": {
-        "strategy": "1 conservative trend strategy",
+        "strategy": "6-10 aggressive strategies",
         "position": "Fixed low position configuration",
         "delay": "Signal delay 30-60s",
+        "resonance": "15m/1H/4H multi-timeframe resonance",
+        "api": "Real-time API smart copy trading",
         "notification": "Telegram basic push"
       },
       "cta": "Get Started"
@@ -67,11 +138,12 @@
       "period": "USDT / month",
       "description": "Suitable for serious long-term traders",
       "features": {
-        "strategies": "2-3 core strategies (trend + breakout)",
-        "resonance": "15m/1H/4H multi-timeframe resonance",
+        "strategies": "8-16 core strategies",
+        "resonance": "15m/1H/4H/1D multi-timeframe resonance",
         "api": "Real-time API intelligent copy trading",
         "risk": "Basic risk control parameter configuration",
-        "report": "Monthly strategy review report"
+        "report": "Monthly strategy review report",
+        "notification": "Telegram warning alerts"
       },
       "cta": "Subscribe Now"
     },
@@ -129,7 +201,7 @@
       "contact": "Contact Us",
       "business": "Business Cooperation"
     },
-    "risk": "Important Risk Warning: Cryptocurrency trading carries extremely high market risks. All strategies, signals, and backtest data provided by Crypto-K Quants are for reference only and do not constitute any investment advice. Past returns do not represent future performance. Users should always independently control account permissions and bear the risk of capital losses from copy trading. This service does not provide 'principal guarantee' or 'profit guarantee' services.",
+    "risk": "Risk notice: Crypto-K Quants provides quantitative research, market analysis, and trading decision-support systems. It does not constitute investment advice or any promise of returns. Cryptocurrency and derivatives trading involve high volatility, leverage, and risk. Users should make independent decisions based on their own risk tolerance.",
     "copyright": "© 2024 Crypto-K Quants. All rights reserved.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service"

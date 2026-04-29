@@ -8,9 +8,9 @@
         <p class="mt-4 text-gray-400">{{ $t('pricing.subtitle') }}</p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
         <!-- Basic Plan -->
-        <div class="glass-card p-8 rounded-2xl border-t-4 border-gray-600 reveal">
+        <div class="glass-card p-8 rounded-2xl border-t-4 border-gray-600 reveal h-full flex flex-col">
           <h3 class="text-lg font-medium text-gray-400">{{ $t('pricing.basic.name') }}</h3>
           <div class="my-6 flex items-baseline">
             <span class="text-5xl font-bold text-white tracking-tight">{{ $t('pricing.basic.price') }}</span>
@@ -19,7 +19,7 @@
           <p class="text-sm text-gray-400 mb-8 border-b border-white/10 pb-8">
             {{ $t('pricing.basic.description') }}
           </p>
-          <ul class="space-y-4 mb-8 text-sm text-gray-300">
+          <ul class="space-y-4 mb-8 text-sm text-gray-300 flex-1">
             <li class="flex items-center">
               <span class="text-brand-cyan mr-3">✓</span>
               {{ $t('pricing.basic.features.strategy') }}
@@ -34,19 +34,27 @@
             </li>
             <li class="flex items-center">
               <span class="text-brand-cyan mr-3">✓</span>
+              {{ $t('pricing.basic.features.resonance') }}
+            </li>
+            <li class="flex items-center">
+              <span class="text-brand-cyan mr-3">✓</span>
+              {{ $t('pricing.basic.features.api') }}
+            </li>
+            <li class="flex items-center">
+              <span class="text-brand-cyan mr-3">✓</span>
               {{ $t('pricing.basic.features.notification') }}
             </li>
           </ul>
           <a
             href="#"
-            class="block w-full py-3 border border-white/20 text-center rounded-lg hover:bg-white/5 hover:text-white transition text-sm font-bold"
+            class="flex min-h-12 w-full items-center justify-center border border-white/20 text-center rounded-lg hover:bg-white/5 hover:text-white transition text-sm font-bold"
           >
             {{ $t('pricing.basic.cta') }}
           </a>
         </div>
 
         <!-- Advanced Plan -->
-        <div class="glass-card p-8 rounded-2xl border-t-4 border-brand-cyan relative transform md:-translate-y-6 shadow-2xl shadow-brand-cyan/10 reveal delay-100">
+        <div class="glass-card p-8 rounded-2xl border-t-4 border-brand-cyan relative shadow-2xl shadow-brand-cyan/10 reveal delay-100 h-full flex flex-col">
           <div class="absolute top-0 right-0 bg-brand-cyan text-brand-dark text-xs font-bold px-3 py-1 rounded-bl-lg">
             {{ $t('pricing.advanced.badge') }}
           </div>
@@ -58,7 +66,7 @@
           <p class="text-sm text-gray-300 mb-8 border-b border-white/10 pb-8">
             {{ $t('pricing.advanced.description') }}
           </p>
-          <ul class="space-y-4 mb-8 text-sm text-white font-medium">
+          <ul class="space-y-4 mb-8 text-sm text-white font-medium flex-1">
             <li class="flex items-center">
               <span class="text-brand-cyan mr-3">✓</span>
               {{ $t('pricing.advanced.features.strategies') }}
@@ -79,17 +87,21 @@
               <span class="text-brand-cyan mr-3">✓</span>
               {{ $t('pricing.advanced.features.report') }}
             </li>
+            <li class="flex items-center">
+              <span class="text-brand-cyan mr-3">✓</span>
+              {{ $t('pricing.advanced.features.notification') }}
+            </li>
           </ul>
           <a
             href="https://home.ckqpro.com/#/pages/auth/register"
-            class="block w-full py-4 bg-brand-cyan text-brand-dark font-bold text-center rounded-lg hover:bg-brand-cyanDim hover:shadow-[0_0_20px_rgba(102,252,241,0.4)] transition"
+            class="flex min-h-12 w-full items-center justify-center bg-brand-cyan text-brand-dark font-bold text-center rounded-lg hover:bg-brand-cyanDim hover:shadow-[0_0_20px_rgba(102,252,241,0.4)] transition"
           >
             {{ $t('pricing.advanced.cta') }}
           </a>
         </div>
 
         <!-- Pro Quant Plan -->
-        <div class="glass-card p-8 rounded-2xl border-t-4 border-purple-500 reveal delay-200">
+        <div class="glass-card p-8 rounded-2xl border-t-4 border-purple-500 reveal delay-200 h-full flex flex-col">
           <h3 class="text-lg font-medium text-purple-400">{{ $t('pricing.pro.name') }}</h3>
           <div class="my-6 flex items-baseline">
             <span class="text-5xl font-bold text-white tracking-tight">{{ $t('pricing.pro.price') }}</span>
@@ -98,7 +110,7 @@
           <p class="text-sm text-gray-400 mb-8 border-b border-white/10 pb-8">
             {{ $t('pricing.pro.description') }}
           </p>
-          <ul class="space-y-4 mb-8 text-sm text-gray-300">
+          <ul class="space-y-4 mb-8 text-sm text-gray-300 flex-1">
             <li class="flex items-center">
               <span class="text-brand-cyan mr-3">✓</span>
               {{ $t('pricing.pro.features.all') }}
@@ -118,7 +130,7 @@
           </ul>
           <a
             href="#footer-contact"
-            class="block w-full py-3 border border-purple-500/50 text-purple-400 text-center rounded-lg hover:bg-purple-500/10 transition text-sm font-bold"
+            class="flex min-h-12 w-full items-center justify-center border border-purple-500/50 text-purple-400 text-center rounded-lg hover:bg-purple-500/10 transition text-sm font-bold"
           >
             {{ $t('pricing.pro.cta') }}
           </a>
