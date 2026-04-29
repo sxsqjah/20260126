@@ -30,7 +30,7 @@
     },
     "aiTrading": {
       "title": "MTF Engine Multi-Timeframe Resonance",
-      "description": "Analyzes 5M / 15M / 1H trend structures together: short timeframes for entry and mid timeframes for direction, helping filter false breakouts and short-term noise."
+      "description": "Analyzes trend structures across multiple time levels: short timeframes for entry and mid timeframes for direction, helping filter false breakouts and short-term noise."
     },
     "riskControl": {
       "title": "AI-Signal Smart Scoring",

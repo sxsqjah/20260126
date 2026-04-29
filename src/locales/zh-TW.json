@@ -30,7 +30,7 @@
     },
     "aiTrading": {
       "title": "MTF Engine 多週期共振",
-      "description": "同步分析 5M / 15M / 1H 趨勢結構，短線找入場，中線定方向，幫助過濾假突破與短線噪音。"
+      "description": "同步分析多時間級別的趨勢結構，短線找入場，中線定方向，幫助過濾假突破與短線噪音。"
     },
     "riskControl": {
       "title": "AI-Signal 智能評分",

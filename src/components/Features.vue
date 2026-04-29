@@ -73,6 +73,8 @@
               <span>5M</span>
               <span>15M</span>
               <span>1H</span>
+              <span>4H</span>
+              <span>1D</span>
             </div>
           </div>
         </div>
