@@ -1,5 +1,5 @@
 <template>
-  <section class="py-24 relative overflow-hidden">
+  <section class="command-section py-24 relative overflow-hidden">
     <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(102,252,241,0.08),transparent_36%)]"></div>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       <div class="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">

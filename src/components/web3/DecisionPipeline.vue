@@ -10,6 +10,13 @@
         </p>
       </div>
 
+      <div v-if="compact" class="pipeline-mobile-summary reveal delay-100">
+        <div v-for="(step, index) in mobileSteps" :key="step.key" class="pipeline-mobile-chip">
+          <span>{{ String(index + 1).padStart(2, '0') }}</span>
+          <strong>{{ $t(`web3.pipeline.steps.${step.key}.title`) }}</strong>
+        </div>
+      </div>
+
       <div class="pipeline reveal delay-100" :class="compact ? 'pipeline--compact mt-8' : 'mt-14'">
         <div v-for="(step, index) in steps" :key="step.key" class="pipeline-step" :style="{ '--step-delay': `${index * 0.24}s` }">
           <div class="pipeline-step__index">{{ String(index + 1).padStart(2, '0') }}</div>
@@ -38,6 +45,13 @@ const steps = [
   { key: 'approval' },
   { key: 'execution' },
   { key: 'shadow' },
+]
+
+const mobileSteps = [
+  { key: 'market' },
+  { key: 'scoring' },
+  { key: 'risk' },
+  { key: 'execution' },
 ]
 
 useRevealAnimation()

@@ -342,4 +342,88 @@ useRevealAnimation()
     transition: none;
   }
 }
+
+@media (max-width: 767px) {
+  #features {
+    padding-top: 4.25rem;
+    padding-bottom: 4.25rem;
+  }
+
+  #features .text-center.mb-16 {
+    margin-bottom: 2.2rem;
+  }
+
+  #features h2 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  #features .grid {
+    gap: 1rem;
+  }
+
+  .tech-module-card {
+    padding: 1.2rem !important;
+    border-radius: 18px;
+  }
+
+  .feature-icon {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 1rem;
+    border-radius: 16px;
+  }
+
+  .feature-icon::after {
+    border-radius: 15px;
+  }
+
+  .feature-icon svg {
+    width: 37px;
+    height: 37px;
+  }
+
+  .tech-module-card h3 {
+    margin-bottom: 0.65rem;
+    font-size: 1.22rem;
+    line-height: 1.35;
+  }
+
+  .tech-module-card p {
+    font-size: 0.88rem;
+    line-height: 1.65;
+  }
+
+  .module-visual {
+    min-height: 42px;
+    margin-top: 1rem;
+    padding-top: 0.85rem;
+  }
+
+  .flow-bars,
+  .score-bars {
+    height: 36px;
+  }
+
+  .time-rings,
+  .risk-tags,
+  .execution-line {
+    gap: 0.4rem;
+  }
+
+  .time-rings {
+    flex-wrap: wrap;
+  }
+
+  .time-rings span,
+  .risk-tag {
+    padding: 0.42rem 0.55rem;
+    font-size: 0.62rem;
+  }
+
+  .execution-line {
+    align-items: flex-start;
+    font-size: 0.68rem;
+  }
+}
 </style>

@@ -1,9 +1,9 @@
 <template>
-  <nav class="fixed w-full z-50 bg-brand-dark/90 backdrop-blur-md border-b border-white/5">
+  <nav class="site-nav fixed w-full z-50 bg-brand-dark/90 backdrop-blur-md border-b border-white/5">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-20">
+      <div class="site-nav__bar flex items-center justify-between h-20">
         <div class="flex-shrink-0 cursor-pointer" @click="scrollToTop">
-          <span class="text-2xl font-bold font-mono text-white tracking-tighter hover:text-brand-cyan transition duration-300">
+          <span class="site-nav__logo text-2xl font-bold font-mono text-white tracking-tighter hover:text-brand-cyan transition duration-300">
             CRYPTO<span class="text-brand-cyan">-K</span> QUANTS
           </span>
         </div>
@@ -69,7 +69,7 @@
           </div>
         </div>
 
-        <div class="flex items-center space-x-4 md:hidden">
+        <div class="site-nav__mobile-actions flex items-center space-x-4 md:hidden">
           <!-- 移动端语言切换 - 地球图标按钮 -->
           <div class="relative">
             <button
@@ -265,4 +265,19 @@ function navigateToSection(section: string) {
 </script>
 
 <style scoped>
+@media (max-width: 767px) {
+  .site-nav__bar {
+    height: 68px;
+  }
+
+  .site-nav__logo {
+    font-size: 1.35rem;
+    letter-spacing: -0.055em;
+    white-space: nowrap;
+  }
+
+  .site-nav__mobile-actions {
+    gap: 0.45rem;
+  }
+}
 </style>
