@@ -68,14 +68,14 @@
       "eyebrow": "AI DECISION PIPELINE",
       "title": "AI Decision Pipeline",
       "subtitle": "From data to execution, every step is verifiable",
-      "description": "The system connects market data, feature engineering, AI signal scoring, risk admission, manual approval, and semi-automated execution into a transparent and traceable decision loop.",
+      "description": "The system connects market data, feature engineering, AI signal scoring, risk admission, AI + human dual confirmation review, and auto/semi-automated execution into a transparent and traceable decision loop.",
       "steps": {
         "market": { "title": "Market Data Input", "subtitle": "Market data input" },
         "feature": { "title": "Feature Engineering", "subtitle": "Feature processing" },
         "scoring": { "title": "AI Signal Scoring", "subtitle": "AI signal scoring" },
         "risk": { "title": "Risk Gate", "subtitle": "Risk admission gate" },
-        "approval": { "title": "Manual Approval", "subtitle": "Human review" },
-        "execution": { "title": "Semi-Auto Execution", "subtitle": "Semi-auto execution" },
+        "approval": { "title": "AI + Human Review", "subtitle": "Dual confirmation review" },
+        "execution": { "title": "Auto & Semi-Auto Execution", "subtitle": "Auto/semi-auto execution" },
         "shadow": { "title": "Shadow Validation", "subtitle": "Shadow backtest validation" }
       }
     },
@@ -192,7 +192,8 @@
       "subscription": "Strategy Subscription",
       "api": "API Copy Trading",
       "whitepaper": "Download Whitepaper",
-      "backtest": "Historical Backtest Report"
+      "backtest": "Historical Backtest Report",
+      "backtestPending": "Latest data is being uploaded. Please try again later!"
     },
     "support": {
       "title": "Support",

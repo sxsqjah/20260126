@@ -129,7 +129,7 @@
             </li>
           </ul>
           <a
-            href="#footer-contact"
+            :href="contactMailto"
             class="flex min-h-12 w-full items-center justify-center border border-purple-500/50 text-purple-400 text-center rounded-lg hover:bg-purple-500/10 transition text-sm font-bold"
           >
             {{ $t('pricing.pro.cta') }}
@@ -143,7 +143,7 @@
           <p class="text-gray-400 mt-2">{{ $t('pricing.enterprise.description') }}</p>
         </div>
         <a
-          href="#"
+          :href="contactMailto"
           class="mt-6 md:mt-0 text-brand-cyan border-b border-brand-cyan pb-1 hover:text-white hover:border-white transition font-mono"
         >
           {{ $t('pricing.enterprise.cta') }}
@@ -155,6 +155,7 @@
 
 <script setup lang="ts">
 import { useRevealAnimation } from '../composables/useRevealAnimation'
+import { contactMailto } from '../config/contact'
 
 useRevealAnimation()
 </script>

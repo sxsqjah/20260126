@@ -92,7 +92,7 @@
       "eyebrow": "AI DECISION PIPELINE",
       "title": "AI Decision Pipeline",
       "subtitle": "從數據到執行，每一步都可驗證",
-      "description": "系統將市場數據、特徵工程、AI 訊號評分、風控准入、人工確認與半自動執行連接成完整閉環，讓交易決策更透明、更可追蹤。",
+      "description": "系統將市場數據、特徵工程、AI 訊號評分、風控准入、AI+人工雙重確認審核與自動、半自動執行連接成完整閉環，讓交易決策更透明、更可追蹤。",
       "steps": {
         "market": {
           "title": "Market Data Input",
@@ -111,12 +111,12 @@
           "subtitle": "風控准入閘門"
         },
         "approval": {
-          "title": "Manual Approval",
-          "subtitle": "人工確認審核"
+          "title": "AI + Human Review",
+          "subtitle": "AI+人工雙重確認審核"
         },
         "execution": {
-          "title": "Semi-Auto Execution",
-          "subtitle": "半自動執行"
+          "title": "Auto & Semi-Auto Execution",
+          "subtitle": "自動、半自動執行"
         },
         "shadow": {
           "title": "Shadow Validation",
@@ -261,7 +261,8 @@
       "subscription": "策略訂閱",
       "api": "API 跟單",
       "whitepaper": "下載白皮書",
-      "backtest": "歷史回測報告"
+      "backtest": "歷史回測報告",
+      "backtestPending": "最新資料上傳中，請稍後再試！"
     },
     "support": {
       "title": "支援",

@@ -21,8 +21,8 @@
         <div v-for="(step, index) in steps" :key="step.key" class="pipeline-step" :style="{ '--step-delay': `${index * 0.24}s` }">
           <div class="pipeline-step__index">{{ String(index + 1).padStart(2, '0') }}</div>
           <div>
-            <h3 class="text-sm font-semibold text-white">{{ $t(`web3.pipeline.steps.${step.key}.title`) }}</h3>
-            <p class="mt-1 text-xs text-gray-500">{{ $t(`web3.pipeline.steps.${step.key}.subtitle`) }}</p>
+            <h3 class="break-words text-sm font-semibold leading-snug text-white">{{ $t(`web3.pipeline.steps.${step.key}.title`) }}</h3>
+            <p v-if="$t(`web3.pipeline.steps.${step.key}.subtitle`)" class="mt-1 text-xs text-gray-500">{{ $t(`web3.pipeline.steps.${step.key}.subtitle`) }}</p>
           </div>
         </div>
       </div>

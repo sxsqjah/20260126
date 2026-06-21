@@ -92,7 +92,7 @@
       "eyebrow": "AI DECISION PIPELINE",
       "title": "AI Decision Pipeline",
       "subtitle": "데이터부터 실행까지, 모든 단계가 검증 가능합니다",
-      "description": "시스템은 시장 데이터, 피처 엔지니어링, AI 신호 점수화, 리스크 승인, 사람의 확인, 반자동 실행을 하나의 추적 가능한 의사결정 루프로 연결합니다.",
+      "description": "시스템은 시장 데이터, 피처 엔지니어링, AI 신호 점수화, 리스크 승인, AI+인간 이중 확인 검토, 자동 및 반자동 실행을 하나의 추적 가능한 의사결정 루프로 연결합니다.",
       "steps": {
         "market": {
           "title": "Market Data Input",
@@ -111,12 +111,12 @@
           "subtitle": "리스크 승인 게이트"
         },
         "approval": {
-          "title": "Manual Approval",
-          "subtitle": "수동 확인 검토"
+          "title": "AI + Human Review",
+          "subtitle": "AI+인간 이중 확인 검토"
         },
         "execution": {
-          "title": "Semi-Auto Execution",
-          "subtitle": "반자동 실행"
+          "title": "Auto & Semi-Auto Execution",
+          "subtitle": "자동 및 반자동 실행"
         },
         "shadow": {
           "title": "Shadow Validation",
@@ -261,7 +261,8 @@
       "subscription": "전략 구독",
       "api": "API 복사 거래",
       "whitepaper": "백서 다운로드",
-      "backtest": "역사 백테스트 보고서"
+      "backtest": "역사 백테스트 보고서",
+      "backtestPending": "최신 데이터를 업로드 중입니다. 잠시 후 다시 시도해 주세요!"
     },
     "support": {
       "title": "지원",

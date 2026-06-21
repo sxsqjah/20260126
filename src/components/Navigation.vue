@@ -16,7 +16,7 @@
             <a @click="navigateToSection('pricing')" class="text-sm font-medium hover:text-brand-cyan transition duration-300 cursor-pointer">
               {{ $t('nav.pricing') }}
             </a>
-            <a @click="navigateToSection('footer')" class="text-sm font-medium hover:text-brand-cyan transition duration-300 cursor-pointer">
+            <a :href="contactMailto" class="text-sm font-medium hover:text-brand-cyan transition duration-300">
               {{ $t('nav.contact') }}
             </a>
           </div>
@@ -153,7 +153,8 @@
           {{ $t('nav.pricing') }}
         </a>
         <a
-          @click="navigateToSection('footer'); toggleMenu()"
+          :href="contactMailto"
+          @click="toggleMenu"
           class="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-white/5 hover:text-brand-cyan cursor-pointer"
         >
           {{ $t('nav.contact') }}
@@ -180,6 +181,7 @@ import { ref, computed, onMounted, onUnmounted } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
 import { useI18nStore, type Locale } from '../stores/i18n'
 import { getH5LoginUrl } from '../config/h5Login'
+import { contactMailto } from '../config/contact'
 
 const i18nStore = useI18nStore()
 const router = useRouter()

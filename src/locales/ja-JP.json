@@ -92,7 +92,7 @@
       "eyebrow": "AI DECISION PIPELINE",
       "title": "AI Decision Pipeline",
       "subtitle": "データから実行まで、すべての段階を検証可能",
-      "description": "市場データ、特徴量設計、AI シグナルスコア、リスク承認、人による確認、半自動実行を透明で追跡可能な意思決定ループとして接続します。",
+      "description": "市場データ、特徴量設計、AI シグナルスコア、リスク承認、AI+人間による二重確認審査、自動・半自動実行を透明で追跡可能な意思決定ループとして接続します。",
       "steps": {
         "market": {
           "title": "Market Data Input",
@@ -111,12 +111,12 @@
           "subtitle": "リスク承認ゲート"
         },
         "approval": {
-          "title": "Manual Approval",
-          "subtitle": "人による確認"
+          "title": "AI + Human Review",
+          "subtitle": "AI+人間による二重確認審査"
         },
         "execution": {
-          "title": "Semi-Auto Execution",
-          "subtitle": "半自動実行"
+          "title": "Auto & Semi-Auto Execution",
+          "subtitle": "自動・半自動実行"
         },
         "shadow": {
           "title": "Shadow Validation",
@@ -261,7 +261,8 @@
       "subscription": "戦略購読",
       "api": "API コピートレード",
       "whitepaper": "ホワイトペーパーをダウンロード",
-      "backtest": "履歴バックテストレポート"
+      "backtest": "履歴バックテストレポート",
+      "backtestPending": "最新データをアップロード中です。しばらくしてからもう一度お試しください。"
     },
     "support": {
       "title": "サポート",

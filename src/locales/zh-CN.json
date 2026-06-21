@@ -92,14 +92,14 @@
       "eyebrow": "AI DECISION PIPELINE",
       "title": "AI Decision Pipeline",
       "subtitle": "从数据到执行，每一步都可验证",
-      "description": "系统将市场数据、特征工程、AI 信号评分、风险准入、人工确认与半自动执行连接成完整闭环，让交易决策更透明、更可追踪。",
+      "description": "系统将市场数据、特征工程、AI 信号评分、风险准入、AI+人工双重确认审核与自动、半自动执行连接成完整闭环，让交易决策更透明、更可追踪。",
       "steps": {
         "market": { "title": "Market Data Input", "subtitle": "市场数据输入" },
         "feature": { "title": "Feature Engineering", "subtitle": "特征工程加工" },
         "scoring": { "title": "AI Signal Scoring", "subtitle": "AI 信号评分" },
         "risk": { "title": "Risk Gate", "subtitle": "风控准入闸门" },
-        "approval": { "title": "Manual Approval", "subtitle": "人工确认审核" },
-        "execution": { "title": "Semi-Auto Execution", "subtitle": "半自动执行" },
+        "approval": { "title": "AI + Human Review", "subtitle": "AI+人工双重确认审核" },
+        "execution": { "title": "Auto & Semi-Auto Execution", "subtitle": "自动、半自动执行" },
         "shadow": { "title": "Shadow Validation", "subtitle": "影子验证回测" }
       }
     },
@@ -216,7 +216,8 @@
       "subscription": "策略订阅",
       "api": "API 跟单",
       "whitepaper": "下载白皮书",
-      "backtest": "历史回测报告"
+      "backtest": "历史回测报告",
+      "backtestPending": "最新数据上传中，请稍后再试！"
     },
     "support": {
       "title": "支持",

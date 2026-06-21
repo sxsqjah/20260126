@@ -20,10 +20,10 @@
               <a href="#" @click.prevent="scrollToLogin" class="hover:text-brand-cyan transition cursor-pointer">{{ $t('footer.products.api') }}</a>
             </li>
             <li>
-              <a href="/Crypto-K_Quants_Whitepaper_v1.3.pdf" download="Crypto-K_Quants_Whitepaper_v1.3.pdf" class="hover:text-brand-cyan transition">{{ $t('footer.products.whitepaper') }}</a>
+              <a :href="currentWhitepaper.href" :download="currentWhitepaper.filename" class="hover:text-brand-cyan transition">{{ $t('footer.products.whitepaper') }}</a>
             </li>
             <li>
-              <a href="#" @click.prevent="scrollToLogin" class="hover:text-brand-cyan transition cursor-pointer">{{ $t('footer.products.backtest') }}</a>
+              <a href="#" @click.prevent="openBacktestModal" class="hover:text-brand-cyan transition cursor-pointer">{{ $t('footer.products.backtest') }}</a>
             </li>
           </ul>
         </div>
@@ -34,10 +34,10 @@
               <a href="#" class="hover:text-brand-cyan transition">{{ $t('footer.support.help') }}</a>
             </li>
             <li>
-              <a href="#" class="hover:text-brand-cyan transition">{{ $t('footer.support.community') }}</a>
+              <a href="https://t.me/Crypto_Wealth888" target="_blank" rel="noopener noreferrer" class="hover:text-brand-cyan transition">{{ $t('footer.support.community') }}</a>
             </li>
             <li>
-              <a id="footer-contact" href="#footer-contact" class="hover:text-brand-cyan transition">{{ $t('footer.support.contact') }}</a>
+              <a id="footer-contact" :href="contactMailto" class="hover:text-brand-cyan transition">{{ $t('footer.support.contact') }}</a>
             </li>
             <li>
               <a href="#" class="hover:text-brand-cyan transition">{{ $t('footer.support.business') }}</a>
@@ -59,10 +59,64 @@
         </div>
       </div>
     </div>
+
+    <Teleport to="body">
+      <div
+        v-if="showBacktestModal"
+        class="fixed inset-0 z-[100] flex items-center justify-center bg-black/75 px-4 backdrop-blur-sm"
+        @click.self="closeBacktestModal"
+      >
+        <div class="glass-card relative w-full max-w-md rounded-xl border border-brand-cyan/30 bg-brand-gray/90 p-8 text-center shadow-[0_0_40px_rgba(102,252,241,0.14)]">
+          <button
+            type="button"
+            class="absolute right-4 top-4 flex h-8 w-8 items-center justify-center rounded border border-white/10 text-gray-400 transition hover:border-brand-cyan/40 hover:text-brand-cyan"
+            aria-label="Close"
+            @click="closeBacktestModal"
+          >
+            ×
+          </button>
+          <div class="mx-auto mb-5 h-px w-20 bg-brand-cyan/60 shadow-[0_0_16px_rgba(102,252,241,0.55)]"></div>
+          <p class="text-base font-semibold leading-relaxed text-white">
+            {{ $t('footer.products.backtestPending') }}
+          </p>
+        </div>
+      </div>
+    </Teleport>
   </footer>
 </template>
 
 <script setup lang="ts">
+import { computed, onMounted, onUnmounted, ref } from 'vue'
+import { contactMailto } from '../config/contact'
+import { getWhitepaperDownload } from '../config/whitepapers'
+import { useI18nStore } from '../stores/i18n'
+
+const showBacktestModal = ref(false)
+const i18nStore = useI18nStore()
+const currentWhitepaper = computed(() => getWhitepaperDownload(i18nStore.locale))
+
+function openBacktestModal() {
+  showBacktestModal.value = true
+}
+
+function closeBacktestModal() {
+  showBacktestModal.value = false
+}
+
+function handleBacktestModalKeydown(event: KeyboardEvent) {
+  if (event.key === 'Escape') {
+    closeBacktestModal()
+  }
+}
+
+onMounted(() => {
+  window.addEventListener('keydown', handleBacktestModalKeydown)
+})
+
+onUnmounted(() => {
+  window.removeEventListener('keydown', handleBacktestModalKeydown)
+})
+
 function scrollToLogin() {
   // 滚动到页面顶部（导航栏位置）
   window.scrollTo({ top: 0, behavior: 'smooth' })
