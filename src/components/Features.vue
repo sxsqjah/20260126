@@ -185,7 +185,7 @@
         </div>
 
         <!-- 多交易所支持 -->
-        <div class="tech-module-card p-8 rounded-xl hover:border-brand-cyan/40 transition duration-500 reveal delay-500 group">
+        <div class="tech-module-card exchange-support-card p-8 rounded-xl hover:border-brand-cyan/40 transition duration-500 reveal delay-500 group">
           <div class="feature-icon feature-icon--exchange" aria-hidden="true">
             <svg viewBox="0 0 64 64" fill="none">
               <defs>
@@ -207,6 +207,21 @@
           <p class="text-gray-400 text-sm leading-relaxed">
             {{ $t('features.multiExchange.description') }}
           </p>
+          <div class="module-visual exchange-visual" aria-label="Supported exchanges">
+            <div class="exchange-grid">
+              <div
+                v-for="exchange in supportedExchanges"
+                :key="exchange.name"
+                class="exchange-chip"
+                :class="exchange.className"
+              >
+                <span class="exchange-logo-shell">
+                  <img :src="exchange.logo" :alt="`${exchange.name} logo`" loading="lazy" />
+                </span>
+                <span class="exchange-chip__name">{{ exchange.name }}</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -215,6 +230,13 @@
 
 <script setup lang="ts">
 import { useRevealAnimation } from '../composables/useRevealAnimation'
+
+const supportedExchanges = [
+  { name: 'GATE.IO', logo: '/exchanges/gate-io.png', className: 'exchange-chip--gate' },
+  { name: '币安', logo: '/exchanges/binance.svg', className: 'exchange-chip--binance' },
+  { name: 'OKX', logo: '/exchanges/okx.svg', className: 'exchange-chip--okx' },
+  { name: 'BITGET', logo: '/exchanges/bitget.svg', className: 'exchange-chip--bitget' },
+]
 
 useRevealAnimation()
 </script>
@@ -336,6 +358,106 @@ useRevealAnimation()
   --icon-b: 34, 197, 94;
 }
 
+.exchange-support-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.exchange-visual {
+  margin-top: auto;
+  min-height: 0;
+  padding-top: 20px;
+}
+
+.exchange-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.exchange-chip {
+  --exchange-rgb: 102, 252, 241;
+  display: flex;
+  min-width: 0;
+  min-height: 46px;
+  align-items: center;
+  gap: 9px;
+  border: 1px solid rgba(var(--exchange-rgb), 0.22);
+  border-radius: 8px;
+  background:
+    radial-gradient(circle at 22% 50%, rgba(var(--exchange-rgb), 0.16), transparent 42%),
+    linear-gradient(135deg, rgba(102, 252, 241, 0.06), rgba(255, 255, 255, 0.022)),
+    rgba(7, 13, 24, 0.42);
+  padding: 8px 10px;
+  color: rgba(231, 255, 253, 0.9);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  box-shadow:
+    inset 0 0 18px rgba(102, 252, 241, 0.035),
+    0 0 18px rgba(var(--exchange-rgb), 0.055);
+}
+
+.exchange-chip--gate {
+  --exchange-rgb: 26, 120, 255;
+}
+
+.exchange-chip--binance {
+  --exchange-rgb: 240, 185, 11;
+}
+
+.exchange-chip--okx {
+  --exchange-rgb: 255, 255, 255;
+}
+
+.exchange-chip--bitget {
+  --exchange-rgb: 0, 227, 211;
+}
+
+.exchange-logo-shell {
+  display: flex;
+  flex: 0 0 30px;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.exchange-logo-shell img {
+  display: block;
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 7px rgba(var(--exchange-rgb), 0.35));
+}
+
+.exchange-chip--okx .exchange-logo-shell img {
+  width: 23px;
+  height: 23px;
+}
+
+.exchange-chip--gate .exchange-logo-shell img,
+.exchange-chip--bitget .exchange-logo-shell img {
+  width: 25px;
+  height: 25px;
+}
+
+.exchange-chip--gate .exchange-logo-shell img {
+  width: 29px;
+  height: 29px;
+}
+
+.exchange-chip__name {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .feature-icon,
   .feature-icon::before {
@@ -424,6 +546,44 @@ useRevealAnimation()
   .execution-line {
     align-items: flex-start;
     font-size: 0.68rem;
+  }
+
+  .exchange-grid {
+    gap: 0.45rem;
+  }
+
+  .exchange-chip {
+    min-height: 42px;
+    gap: 0.45rem;
+    padding: 0.45rem 0.5rem;
+    font-size: 0.68rem;
+  }
+
+  .exchange-logo-shell {
+    flex-basis: 26px;
+    width: 26px;
+    height: 26px;
+  }
+
+  .exchange-logo-shell img {
+    width: 19px;
+    height: 19px;
+  }
+
+  .exchange-chip--okx .exchange-logo-shell img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .exchange-chip--gate .exchange-logo-shell img,
+  .exchange-chip--bitget .exchange-logo-shell img {
+    width: 22px;
+    height: 22px;
+  }
+
+  .exchange-chip--gate .exchange-logo-shell img {
+    width: 26px;
+    height: 26px;
   }
 }
 </style>
