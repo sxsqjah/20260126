@@ -64,7 +64,14 @@ webwangye/
 
 官网域名：ckqpro.com
 
+## 访问统计后台
+
+项目使用自托管 Umami 统计访问次数、趋势、地区、来源和访问设备。
+
+- 管理后台：<https://stats.ckqpro.com>
+- 部署说明：[`deploy/umami/README.md`](deploy/umami/README.md)
+- `.env`、管理员密码、数据库密码及 Cloudflare Tunnel 凭据不得提交到仓库。
+
 ## 许可证
 
 © 2024 Crypto-K Quants. All rights reserved.
-

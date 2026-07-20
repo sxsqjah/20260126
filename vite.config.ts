@@ -53,6 +53,13 @@ const apkDownloadHeaders = () => ({
   },
 })
 
+const analyticsProxy = {
+  target: 'http://127.0.0.1:3000',
+  changeOrigin: true,
+  xfwd: true,
+  rewrite: (requestPath: string) => requestPath.replace(/^\/stats/, '')
+}
+
 export default defineConfig({
   plugins: [apkDownloadHeaders(), vue()],
   resolve: {
@@ -63,6 +70,18 @@ export default defineConfig({
   server: {
     port: 5175,
     strictPort: true,
-    open: true
+    open: true,
+    allowedHosts: ['ckqpro.com', 'www.ckqpro.com'],
+    proxy: {
+      '^/stats/(ck\\.js|api/ck)$': analyticsProxy
+    }
+  },
+  preview: {
+    port: 5175,
+    strictPort: true,
+    allowedHosts: ['ckqpro.com', 'www.ckqpro.com'],
+    proxy: {
+      '^/stats/(ck\\.js|api/ck)$': analyticsProxy
+    }
   }
 })

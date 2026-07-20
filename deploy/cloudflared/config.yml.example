@@ -1,0 +1,9 @@
+tunnel: replace-with-cloudflare-tunnel-id
+credentials-file: /root/.cloudflared/replace-with-cloudflare-tunnel-id.json
+
+ingress:
+  - hostname: stats.ckqpro.com
+    service: http://127.0.0.1:80
+    originRequest:
+      httpHostHeader: stats.ckqpro.com
+  - service: http_status:404
